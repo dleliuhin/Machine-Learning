@@ -41,3 +41,21 @@ for (i in seq(0, 1, by = 0.05))
   t <- table(A_predicted, A_test$V10)
   print(t)
 }
+
+library(kernlab)
+library(e1071)
+# загружаем указанный набор данных spam
+data(spam)
+
+for(size in seq(20, 4581, by = 500))
+{  
+  # Случайным образом выбираем индексы 20 сообщений для тестирования
+  idx <- sample(1:dim(spam)[1], size)
+  spamtrain <- spam[-idx, ]
+  spamtest <- spam[idx, ]
+  # обучаем классификатор
+  model <- naiveBayes(type ~ ., data = spamtrain)
+  t <- table(predict(model, spamtest), spamtest$type)
+  print(t)
+}
+

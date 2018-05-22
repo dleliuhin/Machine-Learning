@@ -1,0 +1,44 @@
+hardcopy                package:DAAG                R Documentation
+
+_G_r_a_p_h_i_c_a_l _O_u_t_p_u_t _f_o_r _H_a_r_d_c_o_p_y
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function streamlines graphical output to the screen, pdf or
+     ps files.
+
+_U_s_a_g_e:
+
+     hardcopy(width=3.75, height=3.75, color=F, trellis=F,
+                  device=c("","pdf","ps"), path="", pointsize=c(8,4), horiz=F)
+
+_A_r_g_u_m_e_n_t_s:
+
+   width: 
+
+  height: 
+
+   color: TRUE if plot is not black on white only
+
+ trellis: TRUE if plot uses trellis graphics
+
+  device: screen "", pdf or ps
+
+    path: external file name
+
+pointsize: 
+
+   horiz: FALSE for landscape mode
+
+_V_a_l_u_e:
+
+     Graphical output to screen, pdf or ps file.
+
+_A_u_t_h_o_r(_s):
+
+     J.H. Maindonald
+
+_S_e_e _A_l_s_o:
+
+     'postscript'
+

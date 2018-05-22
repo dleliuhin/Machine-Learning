@@ -1,0 +1,83 @@
+<html><head><title>R: Paired Sample t-test</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for onesamp {DAAG}"><tr><td>onesamp {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Paired Sample t-test</h2>
+
+
+<h3>Description</h3>
+
+<p>
+This function performs a t-test for the mean difference for paired data,
+and produces a scatterplot of one column against the other column, showing 
+whether there was any benefit to using the paired design.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+onesamp(dset=corn, x="unsprayed", y="sprayed", xlab=NULL, ylab=NULL, dubious=NULL, conv=NULL, dig=2)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>dset</code></td>
+<td>
+a matrix or dataframe having two columns</td></tr>
+<tr valign="top"><td><code>x</code></td>
+<td>
+name of column to play the role of the `predictor' </td></tr>
+<tr valign="top"><td><code>y</code></td>
+<td>
+name of column to play the role of the `response' </td></tr>
+<tr valign="top"><td><code>xlab</code></td>
+<td>
+horizontal axis label </td></tr>
+<tr valign="top"><td><code>ylab</code></td>
+<td>
+vertical axis label </td></tr>
+<tr valign="top"><td><code>dubious</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>conv</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>dig</code></td>
+<td>
+</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+A scatterplot of <code>y</code> against <code>x</code> together with estimates
+of standard errors and standard errors of the difference 
+(<code>y</code>-<code>x</code>).
+<br>
+Also produced is a confidence interval and p-value for the test.</p>
+
+<h3>Author(s)</h3>
+
+<p>
+J.H. Maindonald
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+onesamp(dset = pair65, x = "ambient", y = "heated", xlab =
+        "Amount of stretch (ambient)", ylab =
+        "Amount of stretch (heated)") 
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

@@ -1,0 +1,27 @@
+fossilfuel               package:DAAG               R Documentation
+
+_F_o_s_s_i_l _F_u_e_l _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+_U_s_a_g_e:
+
+     fossilfuel
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _y_e_a_r a numeric vector giving the year the measurement was taken.
+
+     _c_a_r_b_o_n a numeric vector giving the total worldwide carbon
+          emissions from fossil fuel use, in millions of tonnes.
+
+_S_o_u_r_c_e:
+
+     Marland et al (2003)
+
+_E_x_a_m_p_l_e_s:
+
+     plot(fossilfuel)
+

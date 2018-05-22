@@ -1,0 +1,45 @@
+rainforest               package:DAAG               R Documentation
+
+_R_a_i_n_f_o_r_e_s_t _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'rainforest' data frame has 65 rows and 7 columns.
+
+_U_s_a_g_e:
+
+     rainforest
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _d_b_h a numeric vector
+
+     _w_o_o_d a numeric vector
+
+     _b_a_r_k a numeric vector
+
+     _r_o_o_t a numeric vector
+
+     _r_o_o_t_s_k a numeric vector
+
+     _b_r_a_n_c_h a numeric vector
+
+     _s_p_e_c_i_e_s a factor with levels 'Acacia mabellae', 'C. fraseri',
+          'Acmena smithii', 'B. myrtifolia' 
+
+_S_o_u_r_c_e:
+
+     J. Ash, Australian National University
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Ash, J. and Helman, C. (1990) Floristics and vegetation biomass of
+     a forest catchment, Kioloa, south coastal N.S.W. Cunninghamia, 2:
+     167-182.
+
+_E_x_a_m_p_l_e_s:
+
+     table(rainforest$species)
+

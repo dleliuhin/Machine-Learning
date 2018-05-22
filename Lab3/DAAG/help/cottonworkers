@@ -1,0 +1,63 @@
+cottonworkers              package:DAAG              R Documentation
+
+_O_c_c_u_p_a_t_i_o_n _a_n_d _w_a_g_e _p_r_o_f_i_l_e_s _o_f _B_r_i_t_i_s_h _c_o_t_t_o_n _w_o_r_k_e_r_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Numbers are given in different categories of worker, in each of
+     two investigations.  The first source of information is the Board
+     of Trade Census that was conducted on 1886.  The second is a
+     relatively informal survey conducted by US Bureau of Labor
+     representatives in 1889, for use in official reports.
+
+_U_s_a_g_e:
+
+     data(cottonworkers)
+
+_F_o_r_m_a_t:
+
+     A data frame with 14 observations on the following 3 variables.
+
+     _c_e_n_s_u_s_1_8_8_6 Numbers of workers in each of 14 different categories,
+          according to the Board of Trade wage census that was
+          conducted in 1886
+
+     _s_u_r_v_e_y_1_8_8_9 Numbers of workers in each of 14 different categories,
+          according to data collected in 1889 by the US Bureau of
+          Labor, for use in a report to the US Congress and House of
+          Representatives
+
+     _a_v_w_a_g_e Average wage, in pence, as estimated in the US Bureau of
+          Labor survey
+
+_D_e_t_a_i_l_s:
+
+     The data in 'survey1889' were collected in a relatively informal
+     manner, by approaching individuals on the street.  Biases might
+     therefore be expected.
+
+_S_o_u_r_c_e:
+
+     United States congress, House of Representatives, Sixth Annual
+     Report of the Commissioner of Labor, 1890, Part III, Cost of
+     Living (Washington D.C. 1891); idem.,  Seventh Annual Report of
+     the Commissioner of Labor, 1891, Part III, Cost of Living
+     (Washington D.C. 1892)
+
+     Return of wages in the principal textile trades of the United
+     Kingdom, with report therein. (P.P. 1889, LXX). United Kingdom
+     Official Publication.
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Boot and Maindonald. New estimates of age- and sex-specific
+     earnings, and the male-female earnings gap in the British cotton
+     industry, 1833-1906.  Unpublished manuscript.
+
+_E_x_a_m_p_l_e_s:
+
+     data(cottonworkers)
+     str(cottonworkers)
+     plot(survey1889 ~ census1886, data=cottonworkers)
+     plot(I(avwage*survey1889) ~ I(avwage*census1886), data=cottonworkers)
+

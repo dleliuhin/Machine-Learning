@@ -1,0 +1,41 @@
+cities                 package:DAAG                 R Documentation
+
+_P_o_p_u_l_a_t_i_o_n_s _o_f _M_a_j_o_r _C_a_n_a_d_i_a_n _C_i_t_i_e_s (_1_9_9_2-_9_6)
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Population estimates for several Canadian cities.
+
+_U_s_a_g_e:
+
+     cities
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _C_I_T_Y a factor, consisting of the city names
+
+     _R_E_G_I_O_N a factor with 5 levels (ATL=Atlantic, ON=Ontario,
+          QC=Quebec, PR=Prairies, WEST=Alberta and British Columbia)
+          representing the location of the cities
+
+     _P_O_P_1_9_9_2 a numeric vector giving population in 1000's for 1992
+
+     _P_O_P_1_9_9_3 a numeric vector giving population in 1000's for 1993
+
+     _P_O_P_1_9_9_4 a numeric vector giving population in 1000's for 1994
+
+     _P_O_P_1_9_9_5 a numeric vector giving population in 1000's for 1995
+
+     _P_O_P_1_9_9_6 a numeric vector giving population in 1000's for 1996
+
+_S_o_u_r_c_e:
+
+     Statistics Canada
+
+_E_x_a_m_p_l_e_s:
+
+     cities$have <- factor((cities$REGION=="ON")|(cities$REGION=="WEST"))
+     plot(POP1996~POP1992, data=cities, col=as.integer(cities$have))
+

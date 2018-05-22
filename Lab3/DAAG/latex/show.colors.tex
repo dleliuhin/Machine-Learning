@@ -1,0 +1,30 @@
+\HeaderA{show.colors}{Show R's Colors}{show.colors}
+\keyword{models}{show.colors}
+\begin{Description}\relax
+This function displays the built-in colors.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+show.colors(type=c("singles", "shades", "gray"), order.cols=TRUE)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{type}] type of display - single, multiple or gray shades
+\item[\code{order.cols}] Arrange colors in order 
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+A plot of colors for which there is a single shade (type = "single"),
+multiple shades (type = "multiple"), or gray shades (type = "gray")
+\end{Value}
+\begin{Author}\relax
+J.H. Maindonald
+\end{Author}
+\begin{Examples}
+\begin{ExampleCode}
+require(MASS)
+show.colors()
+\end{ExampleCode}
+\end{Examples}
+

@@ -1,0 +1,83 @@
+<html><head><title>R: Two Sample Permutation Test</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for twotPermutation {DAAG}"><tr><td>twotPermutation {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Two Sample Permutation Test</h2>
+
+
+<h3>Description</h3>
+
+<p>
+This function computes the p-value for the two sample
+t-test using a permutation test.  The permutation density
+can  also be plotted.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+twotPermutation(x1=two65$ambient, x2=two65$heated, nsim=2000, plotit=TRUE)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x1</code></td>
+<td>
+Sample 1</td></tr>
+<tr valign="top"><td><code>x2</code></td>
+<td>
+Sample 2</td></tr>
+<tr valign="top"><td><code>nsim</code></td>
+<td>
+Number of simulations</td></tr>
+<tr valign="top"><td><code>plotit</code></td>
+<td>
+If TRUE, the permutation density will be plotted</td></tr>
+</table>
+
+<h3>Details</h3>
+
+<p>
+Suppose we have n1 values in one group and n2 in a
+second, with n = n1 + n2. The permutation distribution
+results from taking all possible samples of n2 values from
+the total of n values.
+</p>
+
+
+<h3>Value</h3>
+
+<p>
+The p-value for the test of the hypothesis that the mean of
+<code>x1</code> differs from <code>x2</code></p>
+
+<h3>Author(s)</h3>
+
+<p>
+J.H. Maindonald
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Good, P. 2000. Permutation Tests. Springer, New York.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+twotPermutation()
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

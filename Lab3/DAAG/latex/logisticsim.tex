@@ -1,0 +1,32 @@
+\HeaderA{logisticsim}{Simple Logistic Regression Data Simulator}{logisticsim}
+\keyword{models}{logisticsim}
+\begin{Description}\relax
+This function simulates simple regression data from a 
+logistic model.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+logisticsim(x = seq(0, 1, length=101), a = 2, b = -4, seed=NULL)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{x}] a numeric vector representing the explanatory variable
+\item[\code{a}] the regression function intercept
+\item[\code{b}] the regression function slope
+\item[\code{seed}] numeric constant
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+a list consisting of
+\begin{ldescription}
+\item[\code{x}] the explanatory variable vector
+\item[\code{y}] the Poisson response vector
+\end{ldescription}
+\end{Value}
+\begin{Examples}
+\begin{ExampleCode}
+logisticsim()
+\end{ExampleCode}
+\end{Examples}
+

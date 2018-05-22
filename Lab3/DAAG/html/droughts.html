@@ -1,0 +1,47 @@
+<html><head><title>R: Periods Between Rain Events</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for droughts {DAAG}"><tr><td>droughts {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Periods Between Rain Events</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Data collected at Winnipeg International Airport (Canada)
+on periods (in days) between rain events.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>droughts</pre>
+
+
+<h3>Format</h3>
+
+<p>
+This data frame contains the following columns:
+<dl>
+<dt>length</dt><dd>the length of time from the completion of
+the last rain event to the beginning of the next rain event.</dd>
+<dt>year</dt><dd>the calendar year.</dd>
+</dl>
+
+<h3>Examples</h3>
+
+<pre>
+  boxplot(length ~ year, data=droughts)
+  boxplot(log(length) ~ year, data=droughts)
+  hist(droughts$length, main="Winnipeg Droughts", xlab="length (in days)")
+  hist(log(droughts$length), main="Winnipeg Droughts", xlab="length (in days, log scale)")
+
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.88 <a href="00Index.html">Index]</a></div>
+
+</body></html>

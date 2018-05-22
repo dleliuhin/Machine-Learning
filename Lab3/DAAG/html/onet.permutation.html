@@ -1,0 +1,71 @@
+<html><head><title>R: One Sample Permutation t-test</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for onet.permutation {DAAG}"><tr><td>onet.permutation {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>One Sample Permutation t-test</h2>
+
+
+<h3>Description</h3>
+
+<p>
+This function computes the p-value for the one sample
+t-test using a permutation test.  The permutation
+density can  also be plotted.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+onet.permutation(x=pair65$heated - pair65$ambient, nsim=2000, plotit=TRUE)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+a numeric vector containing the sample values (centered
+at the null hypothesis value) </td></tr>
+<tr valign="top"><td><code>nsim</code></td>
+<td>
+the number of permutations (randomly selected)</td></tr>
+<tr valign="top"><td><code>plotit</code></td>
+<td>
+if TRUE, the permutation density is plotted </td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+The p-value for the test of the hypothesis that the mean of <code>x</code>
+differs from 0</p>
+
+<h3>Author(s)</h3>
+
+<p>
+J.H. Maindonald
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Good, P. 2000. Permutation Tests. Springer, New York.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+onet.permutation()
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

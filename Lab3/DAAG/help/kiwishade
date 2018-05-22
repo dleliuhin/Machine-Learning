@@ -1,0 +1,108 @@
+kiwishade                package:DAAG                R Documentation
+
+_K_i_w_i _S_h_a_d_i_n_g _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'kiwishade' data frame has 48 rows and 4 columns. The data are
+     from a designed experiment that   compared different kiwifruit
+     shading treatments. There are four vines in each plot, and four
+     plots (one for each of four  treatments: none, Aug2Dec, Dec2Feb,
+     and Feb2May) in each of three blocks (locations: west, north,
+     east). Each  plot has the same number of vines, each block has the
+     same number of  plots, with each treatment occurring the same
+     number of times.
+
+_U_s_a_g_e:
+
+     kiwishade
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _y_i_e_l_d Total yield (in kg)
+
+     _p_l_o_t a factor with levels    'east.Aug2Dec', 'east.Dec2Feb',   
+          'east.Feb2May', 'east.none',    'north.Aug2Dec',
+          'north.Dec2Feb',    'north.Feb2May', 'north.none',   
+          'west.Aug2Dec', 'west.Dec2Feb',    'west.Feb2May',
+          'west.none' 
+
+     _b_l_o_c_k a factor indicating the location of the plot with levels
+          'east', 'north', 'west' 
+
+     _s_h_a_d_e a factor representing the period for which the experimenter
+          placed shading over the vines; with levels: 'none' no
+          shading,    'Aug2Dec' August - December, 'Dec2Feb' December -
+          February,    'Feb2May' February - May
+
+_D_e_t_a_i_l_s:
+
+     The northernmost plots were grouped together because they were
+     similarly affected by shading from the sun in the north. For the
+     remaining two blocks shelter effects, whether from the west or
+     from the east, were thought more important.
+
+_S_o_u_r_c_e:
+
+     Snelgar, W.P., Manson. P.J., Martin, P.J. 1992. Influence of time
+     of shading on flowering and yield of kiwifruit vines. Journal of
+     Horticultural Science 67: 481-487.
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Maindonald J H 1992. Statistical design, analysis and presentation
+     issues. New Zealand Journal of Agricultural Research 35: 121-141.
+
+_E_x_a_m_p_l_e_s:
+
+     print("Data Summary - Example 2.2.1")
+     attach(kiwishade)
+     kiwimeans <- aggregate(yield, by=list(block, shade), mean)
+     names(kiwimeans) <- c("block","shade","meanyield")
+
+     kiwimeans[1:4,]
+     pause()
+      
+     print("Multilevel Design - Example 9.3")
+     kiwishade.aov <- aov(yield ~ shade+Error(block/shade),data=kiwishade)
+     summary(kiwishade.aov)
+     pause()
+
+     sapply(split(yield, shade), mean)
+
+     pause()
+
+     kiwi.table <- t(sapply(split(yield, plot), as.vector))
+     kiwi.means <- sapply(split(yield, plot), mean)
+     kiwi.means.table <- matrix(rep(kiwi.means,4), nrow=12, ncol=4)   
+     kiwi.summary <- data.frame(kiwi.means, kiwi.table-kiwi.means.table)   
+     names(kiwi.summary)<- c("Mean", "Vine 1", "Vine 2", "Vine 3", "Vine 4")
+     kiwi.summary
+     mean(kiwi.means) # the grand mean (only for balanced design)
+
+     require(nlme)
+     kiwishade.lme <- lme(fixed = yield ~ shade, random = ~ 1 | block/plot, 
+     data=kiwishade)
+     res <- residuals(kiwishade.lme)
+     hat <- fitted(kiwishade.lme) # By default fitted(kiwishade.lme, level=2)
+     coplot(res ~ hat | kiwishade$block, pch=16, columns=3,
+       xlab= "Fitted", ylab="Residuals")
+      
+     res <- residuals(kiwishade.lme)
+     hat <- fitted(kiwishade.lme, level=0) # shade effects only
+     unique(hat) # There are just four distinct values, one per treatment
+     coplot(res ~ hat | kiwishade$block, pch=16, columns=3,
+       xlab="Fitted", ylab="Residuals")
+
+     n.omit <- 2
+     take <- rep(TRUE, 48)
+     take[sample(1:48,2)] <- FALSE
+     kiwishade.lme <- lme(yield ~ shade, data = kiwishade,
+                          random = ~1 | block/plot, subset=take)
+     VarCorr(kiwishade.lme)[4, 1]  # Plot component of variance
+     VarCorr(kiwishade.lme)[4, 1]  # Vine component of variance
+
+     detach(kiwishade)
+

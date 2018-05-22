@@ -1,0 +1,69 @@
+rice                  package:DAAG                  R Documentation
+
+_G_e_n_e_t_i_c_a_l_l_y _M_o_d_i_f_i_e_d _a_n_d _W_i_l_d _T_y_p_e _R_i_c_e _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'rice' data frame has 72 rows and 7 columns. The data are from
+     an experiment that compared wild type (wt) and genetically
+     modified rice plants (ANU843), each with three different chemical
+     treatments (F10, NH4Cl, and NH4NO3).
+
+_U_s_a_g_e:
+
+     rice
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _P_l_a_n_t_N_o a numeric vector
+
+     _B_l_o_c_k a numeric vector
+
+     _R_o_o_t_D_r_y_M_a_s_s a numeric vector
+
+     _S_h_o_o_t_D_r_y_M_a_s_s a numeric vector
+
+     _t_r_t a factor with levels 'F10', 'NH4Cl', 'NH4NO3', 'F10 +ANU843',
+          'NH4Cl +ANU843', 'NH4NO3 +ANU843'
+
+     _f_e_r_t a factor with levels 'F10' 'NH4Cl' 'NH4NO3'
+
+     _v_a_r_i_e_t_y a factor with levels 'wt' 'ANU843'
+
+_S_o_u_r_c_e:
+
+     Perrine, F.M., Prayitno, J., Weinman, J.J., Dazzo, F.B. and Rolfe,
+     B. 2001.  Rhizobium plasmids are involved in the inhibition or
+     stimulation of rice growth and development.  Australian Journal of
+     Plant Physiology 28: 923-927.
+
+_E_x_a_m_p_l_e_s:
+
+     print("One and Two-Way Comparisons - Example 4.5")
+     attach(rice)
+     oldpar <- par(las = 2)
+     stripchart(ShootDryMass ~ trt, pch=1, cex=1, xlab="Level of factor 1")
+     detach(rice)
+     pause()
+
+     rice.aov <- aov(ShootDryMass ~ trt, data=rice); anova(rice.aov)
+     anova(rice.aov)
+     pause()
+
+     summary.lm(rice.aov)$coef
+     pause()
+
+     rice$trt <- relevel(rice$trt, ref="NH4Cl")
+       # Set NH4Cl as the baseline
+
+     fac1 <- factor(sapply(strsplit(as.character(rice$trt)," \\+"), function(x)x[1]))
+     anu843 <- sapply(strsplit(as.character(rice$trt), "\\+"), 
+     function(x)c("wt","ANU843")[length(x)])
+     anu843 <- factor(anu843, levels=c("wt", "ANU843"))
+     attach(rice)
+     interaction.plot(fac1, anu843, ShootDryMass)
+     detach(rice)
+     par(oldpar)
+

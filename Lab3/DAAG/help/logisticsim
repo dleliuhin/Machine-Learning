@@ -1,0 +1,35 @@
+logisticsim               package:DAAG               R Documentation
+
+_S_i_m_p_l_e _L_o_g_i_s_t_i_c _R_e_g_r_e_s_s_i_o_n _D_a_t_a _S_i_m_u_l_a_t_o_r
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function simulates simple regression data from a  logistic
+     model.
+
+_U_s_a_g_e:
+
+     logisticsim(x = seq(0, 1, length=101), a = 2, b = -4, seed=NULL)
+
+_A_r_g_u_m_e_n_t_s:
+
+       x: a numeric vector representing the explanatory variable
+
+       a: the regression function intercept
+
+       b: the regression function slope
+
+    seed: numeric constant
+
+_V_a_l_u_e:
+
+     a list consisting of 
+
+       x: the explanatory variable vector
+
+       y: the Poisson response vector
+
+_E_x_a_m_p_l_e_s:
+
+     logisticsim()
+

@@ -1,0 +1,63 @@
+<html><head><title>R: Dose-mortality data, for fumigation of codling moth with methyl bromide</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for codling {DAAG}"><tr><td>codling {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Dose-mortality data, for fumigation of codling moth with methyl bromide</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Data are from trials that studied the mortality response of codling moth
+to fumigation with methyl bromide.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(codling)</pre>
+
+
+<h3>Format</h3>
+
+<p>
+A data frame with 99 observations on the following 10 variables.
+<dl>
+<dt>dose</dt><dd>Injected dose of methyl bromide, in gm per cubic meter</dd>
+<dt>tot</dt><dd>Number of insects in chamber</dd>
+<dt>dead</dt><dd>Number of insects dying</dd>
+<dt>pobs</dt><dd>Proportion dying</dd>
+<dt>cm</dt><dd>Control mortality, i.e., at dose 0</dd>
+<dt>ct</dt><dd>Concentration-time sum</dd>
+<dt>Cultivar</dt><dd>a factor with levels <code>BRAEBURN</code> <code>FUJI</code> <code>GRANNY</code> <code>Gala</code> <code>ROYAL</code> <code>Red Delicious</code> <code>Splendour</code></dd>
+<dt>gp</dt><dd>a factor which has a different level for each different
+combination of <code>Cultivar</code>, <code>year</code> and <code>rep</code> (replicate).</dd>
+<dt>year</dt><dd>a factor with levels <code>1988</code> <code>1989</code></dd>
+<dt>numcm</dt><dd>a numeric vector: total number of control insects</dd>
+</dl>
+
+<h3>Details</h3>
+
+<p>
+The research that generated these data was in part funded by New Zealand
+pipfruit growers.  The published analysis was funded by New Zealand
+pipfruit growers. See also <code>sorption</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>
+Maindonald, J.H.; Waddell, B.C.; Petry, R.J. 2001.
+Apple cultivar effects on codling moth (Lepidoptera: Tortricidae)
+egg mortality following fumigation with methyl bromide.
+Postharvest Biology and Technology 22: 99-110.
+</p>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

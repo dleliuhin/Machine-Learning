@@ -1,0 +1,75 @@
+<html><head><title>R: Variance Inflation Factors</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for vif {DAAG}"><tr><td>vif {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Variance Inflation Factors</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Variance inflation factors are computed for the standard
+errors of linear model coefficient estimates.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+vif(obj, digits=5)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>obj</code></td>
+<td>
+A <code>lm</code> object </td></tr>
+<tr valign="top"><td><code>digits</code></td>
+<td>
+Number of digits</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+A vector of variance inflation factors corresponding to 
+the coefficient estimates given in the <code>lm</code> object.</p>
+
+<h3>Author(s)</h3>
+
+<p>
+J.H. Maindonald
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code>lm</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+litters.lm &lt;- lm(brainwt ~ bodywt + lsize, data = litters)
+vif(litters.lm)
+
+carprice1.lm &lt;- lm(gpm100 ~ Type+Min.Price+Price+Max.Price+Range.Price,
+    data=carprice)
+vif(carprice1.lm)
+
+carprice.lm &lt;- lm(gpm100 ~ Type + Price, data = carprice)
+vif(carprice1.lm)
+
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

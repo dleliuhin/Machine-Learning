@@ -1,0 +1,52 @@
+cv.binary                package:DAAG                R Documentation
+
+_C_r_o_s_s-_V_a_l_i_d_a_t_i_o_n _f_o_r _R_e_g_r_e_s_s_i_o_n _w_i_t_h _a _B_i_n_a_r_y _R_e_s_p_o_n_s_e
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function gives internal and cross-validation measures of
+     predictive accuracy for regression with a binary response.  The
+     data are  randomly assigned to a number of `folds'.   Each fold is
+     removed, in turn, while the remaining data is used to re-fit the
+     regression model and to predict at the deleted observations.
+
+_U_s_a_g_e:
+
+     cv.binary(obj=frogs.glm, rand=NULL, nfolds=10, print.details=TRUE)
+
+_A_r_g_u_m_e_n_t_s:
+
+     obj: a 'glm' object
+
+    rand: a vector which assigns each observation to a fold 
+
+  nfolds: the number of folds
+
+print.details: logical variable (TRUE = print detailed output,  the
+          default) 
+
+_V_a_l_u_e:
+
+the order in which folds were deleted: 
+
+internal estimate of accuracy: 
+
+cross-validation estimate of accuracy: 
+
+_A_u_t_h_o_r(_s):
+
+     J.H. Maindonald
+
+_S_e_e _A_l_s_o:
+
+     'glm'
+
+_E_x_a_m_p_l_e_s:
+
+     frogs.glm <- glm(pres.abs ~ log(distance) + log(NoOfPools), 
+        family=binomial,data=frogs)
+     cv.binary(frogs.glm)
+
+     mifem.glm <- glm(outcome ~ ., family=binomial, data=mifem)
+     cv.binary(mifem.glm)
+

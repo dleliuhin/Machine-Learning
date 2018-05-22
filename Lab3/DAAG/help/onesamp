@@ -1,0 +1,50 @@
+onesamp                 package:DAAG                 R Documentation
+
+_P_a_i_r_e_d _S_a_m_p_l_e _t-_t_e_s_t
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function performs a t-test for the mean difference for paired
+     data, and produces a scatterplot of one column against the other
+     column, showing  whether there was any benefit to using the paired
+     design.
+
+_U_s_a_g_e:
+
+     onesamp(dset=corn, x="unsprayed", y="sprayed", xlab=NULL, ylab=NULL, dubious=NULL, conv=NULL, dig=2)
+
+_A_r_g_u_m_e_n_t_s:
+
+    dset: a matrix or dataframe having two columns
+
+       x: name of column to play the role of the `predictor' 
+
+       y: name of column to play the role of the `response' 
+
+    xlab: horizontal axis label 
+
+    ylab: vertical axis label 
+
+ dubious: 
+
+    conv: 
+
+     dig: 
+
+_V_a_l_u_e:
+
+     A scatterplot of 'y' against 'x' together with estimates of
+     standard errors and standard errors of the difference  ('y'-'x').
+
+     Also produced is a confidence interval and p-value for the test.
+
+_A_u_t_h_o_r(_s):
+
+     J.H. Maindonald
+
+_E_x_a_m_p_l_e_s:
+
+     onesamp(dset = pair65, x = "ambient", y = "heated", xlab =
+             "Amount of stretch (ambient)", ylab =
+             "Amount of stretch (heated)") 
+

@@ -1,0 +1,66 @@
+<html><head><title>R: Spam E-mail Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for spam7 {DAAG}"><tr><td>spam7 {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Spam E-mail Data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+The data consist of 4601 email items, of which 1813 items were identified
+as spam.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>spam7</pre>
+
+
+<h3>Format</h3>
+
+<p>
+This data frame contains the following columns:
+<dl>
+<dt>crl.tot</dt><dd>total length of words in capitals</dd>
+<dt>dollar</dt><dd>number of occurrences of the $ symbol</dd>
+<dt>bang</dt><dd>number of occurrences of the ! symbol</dd>
+<dt>money</dt><dd>number of occurrences of the word `money'</dd>
+<dt>n000</dt><dd>number of occurrences of the string `000'</dd>
+<dt>make</dt><dd>number of occurrences of the word `make'</dd>
+<dt>yesno</dt><dd>outcome variable, a factor with levels
+<code>n</code> not spam,
+<code>y</code> spam</dd>
+</dl>
+
+<h3>Source</h3>
+
+<p>
+George Forman, Hewlett-Packard Laboratories
+</p>
+<p>
+These data are available from the University
+of California at Irvine Repository of Machine Learning Databases
+and Domain Theories. The address is:  http://www.ics.uci.edu/~Here
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+require(rpart)
+spam.rpart &lt;- rpart(formula = yesno ~ crl.tot + dollar + bang +
+   money + n000 + make, data=spam7)
+plot(spam.rpart)
+text(spam.rpart)
+
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

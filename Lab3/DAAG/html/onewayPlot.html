@@ -1,0 +1,87 @@
+<html><head><title>R: Display of One Way Analysis Results</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for onewayPlot {DAAG}"><tr><td>onewayPlot {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Display of One Way Analysis Results</h2>
+
+
+<h3>Description</h3>
+
+<p>
+A line plot of estimates for unstructured comparison of factor levels
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+onewayPlot(obj = rice.aov, trtnam = "trt", axisht = 6, xlim = NULL, 
+    xlab = NULL, lsdht = 1.5, hsdht = 0.5, textht = axisht - 
+        2.5, oma = rep(1, 4), angle = 80, alpha = 0.05)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>obj</code></td>
+<td>
+One way analysis of variance object (from aov)</td></tr>
+<tr valign="top"><td><code>trtnam</code></td>
+<td>
+name of factor for which line plot is required</td></tr>
+<tr valign="top"><td><code>axisht</code></td>
+<td>
+Axis height</td></tr>
+<tr valign="top"><td><code>xlim</code></td>
+<td>
+Range on horizontal axis</td></tr>
+<tr valign="top"><td><code>xlab</code></td>
+<td>
+Horizontal axis label</td></tr>
+<tr valign="top"><td><code>lsdht</code></td>
+<td>
+Height adjustment parameter for display of LSD</td></tr>
+<tr valign="top"><td><code>hsdht</code></td>
+<td>
+Height adjustment parameter for display of Tukey's HSD</td></tr>
+<tr valign="top"><td><code>textht</code></td>
+<td>
+Height of text</td></tr>
+<tr valign="top"><td><code>oma</code></td>
+<td>
+Outer margin area</td></tr>
+<tr valign="top"><td><code>angle</code></td>
+<td>
+Text angle (in degrees)</td></tr>
+<tr valign="top"><td><code>alpha</code></td>
+<td>
+Test size</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+Estimates, labeled with level names, are set out along a line</p>
+
+<h3>Author(s)</h3>
+
+<p>
+J.H. Maindonald
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+rice.aov &lt;- aov(ShootDryMass ~ trt, data=rice)
+onewayPlot(obj=rice.aov)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.88 <a href="00Index.html">Index]</a></div>
+
+</body></html>

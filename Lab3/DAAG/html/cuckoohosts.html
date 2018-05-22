@@ -1,0 +1,78 @@
+<html><head><title>R: Comparison of cuckoo eggs with host eggs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for cuckoohosts {DAAG}"><tr><td>cuckoohosts {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Comparison of cuckoo eggs with host eggs</h2>
+
+
+<h3>Description</h3>
+
+<p>
+These data compare mean length, mean breadth, and egg color,
+between cuckoos and their hosts.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>cuckoohosts</pre>
+
+
+<h3>Format</h3>
+
+<p>
+A data frame with 10 observations on the following 12 variables.
+<dl>
+<dt>clength</dt><dd>mean length of cuckoo eggs in given host's nest</dd>
+<dt>cl.sd</dt><dd>standard deviation of cuckoo egg lengths</dd>
+<dt>cbreadth</dt><dd>mean breadth of cuckoo eggs in given host's nest</dd>
+<dt>cb.sd</dt><dd>standard deviation of cuckoo egg breadths</dd>
+<dt>cnum</dt><dd>number of cuckoo eggs</dd>
+<dt>hlength</dt><dd>length of host eggs</dd>
+<dt>hl.sd</dt><dd>standard deviation of host egg lengths</dd>
+<dt>hbreadth</dt><dd>breadth of host eggs</dd>
+<dt>hb.sd</dt><dd>standard deviation of host egg breadths</dd>
+<dt>hnum</dt><dd>number of host eggs</dd>
+<dt>match</dt><dd>number of eggs where color matched</dd>
+<dt>nomatch</dt><dd>number where color did not match</dd>
+</dl>
+
+<h3>Details</h3>
+
+<p>
+Although from the same study that generated data in the data frame
+<code>cuckoos</code>, the data do not match precisely.  The cuckoo egg
+lengths and breadths are from the tables on page 168, the host egg
+lengths and breadths from Appendix IV on page 176, and the color
+match counts from the table on page 171.
+</p>
+
+
+<h3>Source</h3>
+
+<p>
+Latter, O.H., 1902.
+The egg of {it cuculus canorus}. an inquiry into the dimensions of
+the cuckoo's egg and the relation of the variations to the size of the eggs
+of the foster-parent, with notes on coloration, &amp;c.
+{em Biometrika}, 1:164&ndash;176.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+cuckoohosts
+str(cuckoohosts)
+plot(cuckoohosts)
+with(cuckoohosts,
+     plot(c(clength,hlength),c(cbreadth,hbreadth),col=rep(1:2,c(6,6))))
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

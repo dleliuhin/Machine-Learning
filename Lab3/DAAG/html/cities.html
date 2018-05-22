@@ -1,0 +1,56 @@
+<html><head><title>R: Populations of Major Canadian Cities (1992-96)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for cities {DAAG}"><tr><td>cities {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Populations of Major Canadian Cities (1992-96)</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Population estimates for several Canadian cities.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>cities</pre>
+
+
+<h3>Format</h3>
+
+<p>
+This data frame contains the following columns:
+<dl>
+<dt>CITY</dt><dd>a factor, consisting of the city names</dd>
+<dt>REGION</dt><dd>a factor with 5 levels (ATL=Atlantic, ON=Ontario,
+QC=Quebec, PR=Prairies, WEST=Alberta and British Columbia) representing the location
+of the cities</dd>
+<dt>POP1992</dt><dd>a numeric vector giving population in 1000's for 1992</dd>
+<dt>POP1993</dt><dd>a numeric vector giving population in 1000's for 1993</dd>
+<dt>POP1994</dt><dd>a numeric vector giving population in 1000's for 1994</dd>
+<dt>POP1995</dt><dd>a numeric vector giving population in 1000's for 1995</dd>
+<dt>POP1996</dt><dd>a numeric vector giving population in 1000's for 1996</dd>
+</dl>
+
+<h3>Source</h3>
+
+<p>
+Statistics Canada
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+cities$have &lt;- factor((cities$REGION=="ON")|(cities$REGION=="WEST"))
+plot(POP1996~POP1992, data=cities, col=as.integer(cities$have))
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

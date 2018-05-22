@@ -1,0 +1,54 @@
+head.injury               package:DAAG               R Documentation
+
+_M_i_n_o_r _H_e_a_d _I_n_j_u_r_y (_S_i_m_u_l_a_t_e_d) _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'head.injury' data frame has 3121 rows and 11 columns. The
+     data were simulated according to a simple logistic regression
+     model to match roughly the clinical characteristics of a sample of
+     individuals who suffered minor head injuries.
+
+_U_s_a_g_e:
+
+     head.injury
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _a_g_e._6_5 age factor (0 = under 65, 1 = over 65).
+
+     _a_m_n_e_s_i_a._b_e_f_o_r_e amnesia before impact (less than 30 minutes = 0, 
+          more  than 30 minutes =1).
+
+     _b_a_s_a_l._s_k_u_l_l._f_r_a_c_t_u_r_e (0 = no fracture, 1 = fracture).
+
+     _G_C_S._d_e_c_r_e_a_s_e Glasgow Coma Scale decrease (0 = no  deterioration, 1
+          = deterioration).
+
+     _G_C_S._1_3 initial Glasgow Coma Scale (0 = not `13', 1 = `13'). 
+
+     _G_C_S._1_5._2_h_o_u_r_s Glasgow Coma Scale after 2 hours (0 = not `15', 1 =
+          '15').
+
+     _h_i_g_h._r_i_s_k assessed by clinician as high risk for neurological
+          intervention (0 = not high risk, 1 = high risk).
+
+     _l_o_s_s._o_f._c_o_n_s_c_i_o_u_s_n_e_s_s (0 = conscious, 1 = loss of  consciousness).
+
+     _o_p_e_n._s_k_u_l_l._f_r_a_c_t_u_r_e (0 = no fracture, 1 = fracture) 
+
+     _v_o_m_i_t_i_n_g (0 = no vomiting, 1 = vomiting)
+
+     _c_l_i_n_i_c_a_l_l_y._i_m_p_o_r_t_a_n_t._b_r_a_i_n._i_n_j_u_r_y any acute brain finding revealed
+          on CT (0 = not present, 1 = present).
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Stiell, I.G., Wells, G.A., Vandemheen, K., Clement, C., Lesiuk,
+     H., Laupacis, A., McKnight, R.D., Verbee, R., Brison, R., Cass,
+     D.,  Eisenhauer, M., Greenberg, G.H., and Worthington, J. (2001) 
+     The Canadian CT Head Rule for Patients with Minor Head Injury, The
+     Lancet. 357: 1391-1396.
+

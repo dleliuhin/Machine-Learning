@@ -1,0 +1,101 @@
+<html><head><title>R: Social Support Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for socsupport {DAAG}"><tr><td>socsupport {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Social Support Data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Data from a survey on social and other kinds of support.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>socsupport</pre>
+
+
+<h3>Format</h3>
+
+<p>
+This data frame contains the following columns:
+<dl>
+<dt>gender</dt><dd>a factor with levels
+<code>female</code>, <code>male</code> </dd>
+<dt>age</dt><dd>age, in years, with levels
+<code>18-20</code>, <code>21-24</code>, <code>25-30</code>, 
+<code>31-40</code>,<code>40+</code> </dd>
+<dt>country</dt><dd>a factor with levels <code>australia</code>, 
+<code>other</code> </dd>
+<dt>marital</dt><dd>a factor with levels <code>married</code>,
+<code>other</code>, <code>single</code> </dd>
+<dt>livewith</dt><dd>a factor with levels <code>alone</code>, 
+<code>friends</code>, <code>other</code>, <code>parents</code>, 
+<code>partner</code>, <code>residences</code></dd>
+<dt>employment</dt><dd>a factor with levels
+<code>employed fulltime</code>, <code>employed part-time</code>, 
+<code>govt assistance</code>, <code>other</code>, <code>parental support</code></dd> 
+<dt>firstyr</dt><dd>a factor with levels <code>first year</code>, 
+<code>other</code> </dd>
+<dt>enrolment</dt><dd>a factor with levels
+<code></code>, <code>full-time</code>, <code>part-time</code></dd>
+<dt>emotional</dt><dd>summary of 5 questions on emotional support availability</dd>
+<dt>emotionalsat</dt><dd>summary of 5 questions on emotional support satisfaction</dd>
+<dt>tangible</dt><dd>summary of 4 questions on availability of tangible support</dd>
+<dt>tangiblesat</dt><dd>summary of 4 questions on satisfaction with tangible support</dd>
+<dt>affect</dt><dd>summary of 3 questions on availability of affectionate support sources</dd>
+<dt>affectsat</dt><dd>summary of 3 questions on satisfaction with affectionate support sources</dd>
+<dt>psi</dt><dd>summary of 3 questions on availability of positive social interaction</dd>
+<dt>psisat</dt><dd>summary of 3 questions on satisfaction with positive social 
+interaction</dd>
+<dt>esupport</dt><dd>summary of 4 questions on extent of emotional support sources</dd>
+<dt>psupport</dt><dd>summary of 4 questions on extent of practical support sources</dd>
+<dt>supsources</dt><dd>summary of 4 questions on extent of social support 
+sources (formerly, socsupport)</dd>
+<dt>BDI</dt><dd>Score on the Beck depression index (summary of 21 questions)</dd>
+</dl>
+
+<h3>Source</h3>
+
+<p>
+Melissa Manning, Psychology, Australian National University
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+attach(socsupport)
+
+not.na &lt;- apply(socsupport[,9:19], 1, function(x)!any(is.na(x)))
+ss.pr1 &lt;- princomp(as.matrix(socsupport[not.na, 9:19]), cor=TRUE)  
+pairs(ss.pr1$scores[,1:3])
+sort(-ss.pr1$scores[,1])        # Minus the largest value appears first
+pause()
+
+not.na[36] &lt;- FALSE
+ss.pr &lt;- princomp(as.matrix(socsupport[not.na, 9:19]), cor=TRUE)  
+summary(ss.pr)          # Examine the contribution of the components
+pause()
+
+# We now regress BDI on the first six principal components:
+ss.lm &lt;- lm(BDI[not.na] ~ ss.pr$scores[, 1:6], data=socsupport)
+summary(ss.lm)$coef
+pause()
+
+ss.pr$loadings[,1]
+plot(BDI[not.na] ~  ss.pr$scores[ ,1], col=as.numeric(gender), 
+pch=as.numeric(gender),  xlab ="1st principal component", ylab="BDI")
+topleft &lt;- par()$usr[c(1,4)]
+legend(topleft[1], topleft[2], col=1:2, pch=1:2, legend=levels(gender))
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

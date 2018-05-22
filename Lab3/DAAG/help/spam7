@@ -1,0 +1,48 @@
+spam7                  package:DAAG                  R Documentation
+
+_S_p_a_m _E-_m_a_i_l _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The data consist of 4601 email items, of which 1813 items were
+     identified as spam.
+
+_U_s_a_g_e:
+
+     spam7
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _c_r_l._t_o_t total length of words in capitals
+
+     _d_o_l_l_a_r number of occurrences of the $ symbol
+
+     _b_a_n_g number of occurrences of the ! symbol
+
+     _m_o_n_e_y number of occurrences of the word `money'
+
+     _n_0_0_0 number of occurrences of the string `000'
+
+     _m_a_k_e number of occurrences of the word `make'
+
+     _y_e_s_n_o outcome variable, a factor with levels 'n' not spam, 'y'
+          spam
+
+_S_o_u_r_c_e:
+
+     George Forman, Hewlett-Packard Laboratories
+
+     These data are available from the University of California at
+     Irvine Repository of Machine Learning Databases and Domain
+     Theories. The address is:  http://www.ics.uci.edu/~Here
+
+_E_x_a_m_p_l_e_s:
+
+     require(rpart)
+     spam.rpart <- rpart(formula = yesno ~ crl.tot + dollar + bang +
+        money + n000 + make, data=spam7)
+     plot(spam.rpart)
+     text(spam.rpart)
+

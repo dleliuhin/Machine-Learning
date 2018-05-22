@@ -1,0 +1,61 @@
+nsw74psidA               package:DAAG               R Documentation
+
+_A _S_u_b_s_e_t _o_f _t_h_e _n_s_w_7_4_p_s_i_d_1 _D_a_t_a _S_e_t
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'nsw74psidA' data frame has 252 rows and 10 columns. See
+     'nsw74psid1' for more information.
+
+_U_s_a_g_e:
+
+     nsw74psidA
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _t_r_t a numeric vector
+
+     _a_g_e a numeric vector
+
+     _e_d_u_c a numeric vector
+
+     _b_l_a_c_k a numeric vector
+
+     _h_i_s_p a numeric vector
+
+     _m_a_r_r a numeric vector
+
+     _n_o_d_e_g a numeric vector
+
+     _r_e_7_4 a numeric vector
+
+     _r_e_7_5 a numeric vector
+
+     _r_e_7_8 a numeric vector
+
+_D_e_t_a_i_l_s:
+
+     This data set was obtained using:
+
+     'here <- age <= 40 & re74<=5000 & re75 <= 5000 & re78 < 30000'
+     'nsw74psidA <- nsw74psid1[here, ]'
+
+_E_x_a_m_p_l_e_s:
+
+     table(nsw74psidA$trt)
+
+     A1.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
+           hisp + marr + nodeg), data = nsw74psidA)
+     summary(A1.lm)$coef
+
+     discA.glm <- glm(formula = trt ~ age + educ + black + hisp +
+       marr + nodeg + re74 + re75, family = binomial, data = nsw74psidA)
+     A.scores <- predict(discA.glm)
+
+     options(digits=4)
+     overlap <- A.scores > -3.5 & A.scores < 3.8
+     A.lm <- lm(re78 ~ trt + A.scores, data=nsw74psidA, subset = overlap)
+     summary(A.lm)$coef
+

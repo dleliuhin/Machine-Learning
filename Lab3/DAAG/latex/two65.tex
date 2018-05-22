@@ -1,0 +1,31 @@
+\HeaderA{two65}{Unpaired Heated Elastic Bands}{two65}
+\keyword{datasets}{two65}
+\begin{Description}\relax
+Twenty-one elastic bands were divided into two groups.
+
+One of the sets was placed in hot water (60-65 degrees C) for four
+minutes, while the other was left at ambient temperature.  After
+a wait of about ten minutes, the amounts of stretch, under a 1.35 kg
+weight, were recorded.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}pair65\end{verbatim}
+\end{Usage}
+\begin{Format}\relax
+This list contains the following elements:
+\describe{
+\item[heated] a numeric vector giving the stretch lengths for
+the heated bands
+\item[ambient] a numeric vector giving the stretch lengths for
+the unheated bands
+}
+\end{Format}
+\begin{Source}\relax
+J.H. Maindonald
+\end{Source}
+\begin{Examples}
+\begin{ExampleCode}
+twot.permutation(two65$ambient,two65$heated) # two sample permutation test
+\end{ExampleCode}
+\end{Examples}
+

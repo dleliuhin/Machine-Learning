@@ -1,0 +1,25 @@
+\HeaderA{medExpenses}{Family Medical Expenses}{medExpenses}
+\keyword{datasets}{medExpenses}
+\begin{Description}\relax
+The \code{medExpenses} data frame  
+contains average weekly medical expenses including drugs for 33 families
+randomly sampled from a community of 600 families which contained
+2700 individuals.  These data were collected in the 1970's at an 
+unknown location.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}medExpenses\end{verbatim}
+\end{Usage}
+\begin{Format}\relax
+\describe{
+\item[familysize] number of individuals in a family
+\item[expenses] average weekly cost for medical expenses per
+family member
+}
+\end{Format}
+\begin{Examples}
+\begin{ExampleCode}
+with(medExpenses, weighted.mean(expenses, familysize))
+\end{ExampleCode}
+\end{Examples}
+

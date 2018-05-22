@@ -1,0 +1,39 @@
+Manitoba.lakes             package:DAAG             R Documentation
+
+_T_h_e _N_i_n_e _L_a_r_g_e_s_t _L_a_k_e_s _i_n _M_a_n_i_t_o_b_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'Manitoba.lakes' data frame has 9 rows and 2 columns. The
+     areas and elevations of the nine largest lakes in Manitoba,
+     Canada.  The geography of Manitoba (a relatively flat province)
+     can be divided crudely into three main areas: a very flat prairie
+     in the south which is at a  relatively high elevation, a middle
+     region consisting of mainly of forest and Precambrian rock, and a
+     northern region which drains more rapidly into Hudson Bay.  All
+     water in Manitoba, which does not evaporate, eventually drains 
+     into Hudson Bay.
+
+_U_s_a_g_e:
+
+     Manitoba.lakes
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _e_l_e_v_a_t_i_o_n a numeric vector consisting of the elevations of the
+          lakes (in meters)
+
+     _a_r_e_a a numeric vector consisting of the areas of the lakes (in
+          square kilometers)
+
+_S_o_u_r_c_e:
+
+     The CANSIM data base at Statistics Canada.
+
+_E_x_a_m_p_l_e_s:
+
+     plot(Manitoba.lakes)
+     plot(Manitoba.lakes[-1,])
+

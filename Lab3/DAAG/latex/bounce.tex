@@ -1,0 +1,46 @@
+\HeaderA{bounce}{Separate plotting positions for labels, to avoid overlap}{bounce}
+\keyword{utilities}{bounce}
+\begin{Description}\relax
+Return univariate plotting positions in which neighboring points are
+separated, if and as necessary, so that they are the specified minimum
+distance apart.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+bounce(y, d, log = FALSE)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{y}] A numeric vector of plotting positions
+\item[\code{d}] Minimum required distance between neighboring positions
+\item[\code{log}] \code{TRUE} if values are will be plotted on a logarithmic scale.
+\end{ldescription}
+\end{Arguments}
+\begin{Details}\relax
+The centroid(s) of groups of points that are moved relative to each
+other remain the same.
+\end{Details}
+\begin{Value}
+A vector of values such that, when plotted along a line, neighboring
+points are the required minimum distance apart.
+\end{Value}
+\begin{Note}\relax
+If values are plotted on a logarithmic scale, \code{d} is the required
+distance apart on that scale. If a base other than 10 is required, set
+\code{log} equal to that base.  (Note that base 10 is the default for
+\code{plot} with \code{log=TRUE}.)
+\end{Note}
+\begin{Author}\relax
+John Maindonald
+\end{Author}
+\begin{SeeAlso}\relax
+See also \code{\LinkA{onewayPlot}{onewayPlot}}
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}
+bounce(c(4, 1.8, 2, 6), d=.4)
+bounce(c(4, 1.8, 2, 6), d=.1, log=TRUE)
+\end{ExampleCode}
+\end{Examples}
+

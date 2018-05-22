@@ -1,0 +1,61 @@
+<html><head><title>R: Scatterplot Panel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for panelCorr {DAAG}"><tr><td>panelCorr {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Scatterplot Panel</h2>
+
+
+<h3>Description</h3>
+
+<p>
+This function produces a bivariate scatterplot with the Pearson 
+correlation.  This is for use with the function <code>panelplot</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+panelCorr(data, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+A data frame with columns x and y</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+Additional arguments</td></tr>
+</table>
+
+<h3>Author(s)</h3>
+
+<p>
+J.H. Maindonald
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+# correlation between body and brain weights for 20 mice:
+
+weights &lt;- litters[,-1]
+names(weights) &lt;-  c("x","y")
+weights &lt;- list(weights)
+weights[[1]]$xlim &lt;- range(litters[,2])
+weights[[1]]$ylim &lt;- range(litters[,3])
+panelplot(weights, panelCorr, totrows=1, totcols=1)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

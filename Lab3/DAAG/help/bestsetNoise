@@ -1,0 +1,55 @@
+bestsetNoise              package:DAAG              R Documentation
+
+_B_e_s_t _S_u_b_s_e_t _S_e_l_e_c_t_i_o_n _A_p_p_l_i_e_d _t_o _N_o_i_s_e
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Best subset selection applied to completely random noise.  This
+     function demonstrates how variable selection techniques in 
+     regression can often err in suggesting that more variables be
+     included in a regression model than necessary.
+
+_U_s_a_g_e:
+
+     bestsetNoise(m=100, n=40, method="exhaustive", nvmax=3)
+
+_A_r_g_u_m_e_n_t_s:
+
+       m: the number of observations to be simulated. 
+
+       n: the number of predictor variables in the simulated model. 
+
+  method: Use 'exhaustive' search, or 'backward' selection,  or
+          'forward' selection, or 'sequential' replacement.
+
+   nvmax: maximum number of explanatory variables in model.
+
+_D_e_t_a_i_l_s:
+
+     A set of 'n' predictor variables are simulated as independent
+     standard normal variates, in addition to a response variable which
+     is also independent of the predictors.  The best model with
+     'nvmax' variables is selected using the 'regsubsets()' function
+     from the leaps package.  (The leaps package must be installed for
+     this function to work.)
+
+_V_a_l_u_e:
+
+     'bestsetNoise' returns the 'lm' model object for the "best" model.
+
+_A_u_t_h_o_r(_s):
+
+     J.H. Maindonald
+
+_S_e_e _A_l_s_o:
+
+     'lm'
+
+_E_x_a_m_p_l_e_s:
+
+     leaps.out <- try(require(leaps, quietly=TRUE))
+     leaps.out.log <- is.logical(leaps.out)
+     if ((leaps.out.log==TRUE)&(leaps.out==TRUE))
+     bestsetNoise(20,6) # `best' 3-variable regression for 20 simulated observations 
+                        # on 7 unrelated variables (including the response)
+

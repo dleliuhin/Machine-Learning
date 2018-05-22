@@ -1,0 +1,33 @@
+appletaste               package:DAAG               R Documentation
+
+_T_a_s_t_i_n_g _e_x_p_e_r_i_m_e_n_t _t_h_a_t _c_o_m_p_a_r_e_d _f_o_u_r _a_p_p_l_e _v_a_r_i_e_t_i_e_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Each of 20 tasters each assessed three out of the four varieties.
+     The experiment was conducted according to a balanced incomplete
+     block design.
+
+_U_s_a_g_e:
+
+     data(appletaste)
+
+_F_o_r_m_a_t:
+
+     A data frame with 60 observations on the following 3 variables.
+
+     _a_f_t_e_r_t_a_s_t_e a numeric vector Apple samples were rated for
+          'aftertaste', by making a mark on a continuous scale that
+          ranged from 0 (extreme dislike) to 150 (like very much).
+
+     _p_a_n_e_l_i_s_t a factor with levels 'a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i'
+          'j' 'k' 'l' 'm' 'n' 'o' 'p' 'q' 'r' 's' 't'
+
+     _p_r_o_d_u_c_t a factor with levels '298' '493' '649' '937'
+
+_E_x_a_m_p_l_e_s:
+
+     data(appletaste)
+     appletaste.aov <- aov(aftertaste ~ panelist + product, data=appletaste)
+     termplot(appletaste.aov)
+

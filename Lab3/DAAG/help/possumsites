@@ -1,0 +1,43 @@
+possumsites               package:DAAG               R Documentation
+
+_P_o_s_s_u_m _S_i_t_e_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'possumsites' data frame consists of latitudes, longitudes,
+     and altitudes for the seven sites from Southern Victoria to
+     central Queensland where the 'possum' observations were made.
+
+_U_s_a_g_e:
+
+     possumsites
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _l_a_t_i_t_u_d_e a numeric vector
+
+     _l_o_n_g_i_t_u_d_e a numeric vector
+
+     _a_l_t_i_t_u_d_e in meters
+
+_S_o_u_r_c_e:
+
+     Lindenmayer, D. B., Viggers, K. L., Cunningham, R. B., and
+     Donnelly, C. F. 1995. Morphological variation among columns of the
+     mountain brushtail possum, Trichosurus caninus Ogilby
+     (Phalangeridae: Marsupiala). Australian Journal of Zoology 43:
+     449-458.
+
+_E_x_a_m_p_l_e_s:
+
+     require(oz)
+     oz(sections=c(3:5, 11:16))
+     attach(possumsites)
+     points(latitude, longitude, pch=16, col=2)
+     chw <- par()$cxy[1]
+     chh <- par()$cxy[2]
+     posval <- c(2,4,2,2,4,2,2)
+     text(latitude+(3-posval)*chw/4, longitude, row.names(possumsites), pos=posval)
+

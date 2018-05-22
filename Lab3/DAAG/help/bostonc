@@ -1,0 +1,23 @@
+bostonc                 package:DAAG                 R Documentation
+
+_B_o_s_t_o_n _H_o_u_s_i_n_g _D_a_t_a - _C_o_r_r_e_c_t_e_d
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The corrected Boston housing data (from
+     http://lib.stat.cmu.edu/datasets/).
+
+_U_s_a_g_e:
+
+     bostonc
+
+_F_o_r_m_a_t:
+
+     A single vector containing the contents of "boston_corrected.txt".
+
+_S_o_u_r_c_e:
+
+     Harrison, D. and Rubinfeld, D.L. 'Hedonic prices and the demand
+     for clean air', J. Environ. Economics & Management, vol.5, 81-102,
+     1978. corrected by Kelley Pace (kpace@unix1.sncc.lsu.edu)
+

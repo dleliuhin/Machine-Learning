@@ -1,0 +1,35 @@
+poxetc                 package:DAAG                 R Documentation
+
+_D_e_a_t_h_s _f_r_o_m _v_a_r_i_o_u_s _c_a_u_s_e_s, _i_n _L_o_n_d_o_n _f_r_o_m _1_6_2_9 _t_i_l_l _1_8_8_1, _w_i_t_h _g_a_p_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Deaths from "flux" or smallpox, measles, all causes, and ratios of
+     the the first two categories to total deaths.
+
+_U_s_a_g_e:
+
+     data(poxetc)
+
+_F_o_r_m_a_t:
+
+     This is a multiple time series consisting of 5 series: 'fpox',
+     'measles', 'all', 'fpox2all', 'measles2all'.
+
+_D_e_t_a_i_l_s:
+
+_S_o_u_r_c_e:
+
+     Guy, W. A. 1882. Two hundred and fifty years of small pox in
+     London. Journal of the Royal Statistical Society 399-443.
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Lancaster, H. O. 1990. Expectations of Life. Springer.
+
+_E_x_a_m_p_l_e_s:
+
+     data(poxetc)
+     str(poxetc)
+     plot(poxetc) 
+

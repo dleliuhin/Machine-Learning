@@ -1,0 +1,38 @@
+oddbooks                package:DAAG                R Documentation
+
+_M_e_a_s_u_r_e_m_e_n_t_s _o_n _1_2 _b_o_o_k_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Data giving thickness (mm), height (cm), width (cm) and weight
+     (g), of 12 books.  Books were selected so that thickness decreased
+     as page area increased
+
+_U_s_a_g_e:
+
+     data(oddbooks)
+
+_F_o_r_m_a_t:
+
+     A data frame with 12 observations on the following 4 variables.
+
+     _t_h_i_c_k a numeric vector
+
+     _h_e_i_g_h_t a numeric vector
+
+     _b_r_e_a_d_t_h a numeric vector
+
+     _w_e_i_g_h_t a numeric vector
+
+_D_e_t_a_i_l_s:
+
+_S_o_u_r_c_e:
+
+     JM took books from his library.
+
+_E_x_a_m_p_l_e_s:
+
+     data(oddbooks)
+     str(oddbooks)
+     plot(oddbooks) 
+

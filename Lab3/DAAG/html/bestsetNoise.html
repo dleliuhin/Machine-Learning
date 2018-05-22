@@ -1,0 +1,92 @@
+<html><head><title>R: Best Subset Selection Applied to Noise</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for bestsetNoise {DAAG}"><tr><td>bestsetNoise {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Best Subset Selection Applied to Noise</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Best subset selection applied to completely random noise.  This
+function demonstrates how variable selection techniques in 
+regression can often err in suggesting that more variables be
+included in a regression model than necessary.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+bestsetNoise(m=100, n=40, method="exhaustive", nvmax=3)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>m</code></td>
+<td>
+the number of observations to be simulated. </td></tr>
+<tr valign="top"><td><code>n</code></td>
+<td>
+the number of predictor variables in the simulated
+model. </td></tr>
+<tr valign="top"><td><code>method</code></td>
+<td>
+Use <code>exhaustive</code> search, or <code>backward</code> selection, 
+or <code>forward</code> selection, or <code>sequential</code> replacement.</td></tr>
+<tr valign="top"><td><code>nvmax</code></td>
+<td>
+maximum number of explanatory variables in model.</td></tr>
+</table>
+
+<h3>Details</h3>
+
+<p>
+A set of <code>n</code> predictor variables are simulated as independent
+standard normal variates, in addition to a response variable which
+is also independent of the predictors.  The best model with
+<code>nvmax</code> variables is selected using the <code>regsubsets()</code>
+function from the leaps package.  (The leaps package must be installed
+for this function to work.)
+</p>
+
+
+<h3>Value</h3>
+
+<p>
+<code>bestsetNoise</code> returns the <code>lm</code> model object for the "best"
+model.</p>
+
+<h3>Author(s)</h3>
+
+<p>
+J.H. Maindonald
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="../../stats/html/lm.html">lm</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+leaps.out &lt;- try(require(leaps, quietly=TRUE))
+leaps.out.log &lt;- is.logical(leaps.out)
+if ((leaps.out.log==TRUE)&amp;(leaps.out==TRUE))
+bestsetNoise(20,6) # `best' 3-variable regression for 20 simulated observations 
+                   # on 7 unrelated variables (including the response)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.95 <a href="00Index.html">Index]</a></div>
+
+</body></html>

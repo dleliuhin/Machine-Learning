@@ -1,0 +1,42 @@
+\HeaderA{vif}{Variance Inflation Factors}{vif}
+\keyword{models}{vif}
+\begin{Description}\relax
+Variance inflation factors are computed for the standard
+errors of linear model coefficient estimates.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+vif(obj, digits=5)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{obj}] A \code{lm} object 
+\item[\code{digits}] Number of digits
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+A vector of variance inflation factors corresponding to 
+the coefficient estimates given in the \code{lm} object.
+\end{Value}
+\begin{Author}\relax
+J.H. Maindonald
+\end{Author}
+\begin{SeeAlso}\relax
+\code{lm}
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}
+litters.lm <- lm(brainwt ~ bodywt + lsize, data = litters)
+vif(litters.lm)
+
+carprice1.lm <- lm(gpm100 ~ Type+Min.Price+Price+Max.Price+Range.Price,
+    data=carprice)
+vif(carprice1.lm)
+
+carprice.lm <- lm(gpm100 ~ Type + Price, data = carprice)
+vif(carprice1.lm)
+
+\end{ExampleCode}
+\end{Examples}
+

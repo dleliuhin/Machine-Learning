@@ -1,0 +1,42 @@
+leafshape                package:DAAG                R Documentation
+
+_F_u_l_l _L_e_a_f _S_h_a_p_e _D_a_t_a _S_e_t
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Leaf length, width and petiole measurements taken at various sites
+     in Australia.
+
+_U_s_a_g_e:
+
+     leafshape
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _b_l_a_d_e_l_e_n leaf length (in mm)
+
+     _p_e_t_i_o_l_e a numeric vector
+
+     _b_l_a_d_e_w_i_d leaf width (in mm)
+
+     _l_a_t_i_t_u_d_e latitude
+
+     _l_o_g_w_i_d natural logarithm of width
+
+     _l_o_g_p_e_t logarithm of petiole
+
+     _l_o_g_l_e_n logarithm of length
+
+     _a_r_c_h leaf architecture (0 = plagiotropic, 1 = orthotropic
+
+     _l_o_c_a_t_i_o_n a factor with levels 'Sabah', 'Panama', 'Costa Rica', 'N
+          Queensland', 'S Queensland',  'Tasmania'  .in -5 
+
+_S_o_u_r_c_e:
+
+     King, D.A. and Maindonald, J.H. 1999. Tree architecture in
+     relation to leaf dimensions and tree stature in temperate and
+     tropical rain forests. Journal of Ecology 87: 1012-1024.
+

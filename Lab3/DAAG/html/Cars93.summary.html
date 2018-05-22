@@ -1,0 +1,87 @@
+<html><head><title>R: A Summary of the Cars93 Data set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for Cars93.summary {DAAG}"><tr><td>Cars93.summary {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>A Summary of the Cars93 Data set</h2>
+
+
+<h3>Description</h3>
+
+<p>
+The <code>Cars93.summary</code> data frame has 6 rows and 4 columns
+created from information in the <code>Cars93</code> data set in the Venables 
+and Ripley MASS package. Each row corresponds to a different
+class of car (e.g. Compact, Large, etc.).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Cars93.summary</pre>
+
+
+<h3>Format</h3>
+
+<p>
+This data frame contains the following columns:
+<dl>
+<dt>Min.passengers</dt><dd>minimum
+passenger capacity for each class of car</dd>
+<dt>Max.passengers</dt><dd>maximum
+passenger capacity for each class of car</dd>
+<dt>No.of.cars</dt><dd>number of
+cars in each class</dd>
+<dt>abbrev</dt><dd>a factor with levels
+<code>C</code> Compact, <code>L</code> Large, 
+<code>M</code> Mid-Size, <code>Sm</code> Small, 
+<code>Sp</code> Sporty, <code>V</code> Van</dd>
+</dl>
+
+<h3>Source</h3>
+
+<p>
+Lock, R. H. (1993) 1993 New Car Data. Journal of Statistics
+Education 1(1)
+</p>
+
+
+<h3>References</h3>
+
+<p>
+MASS library
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+type &lt;- Cars93.summary$abbrev
+type &lt;- Cars93.summary[,4]
+type &lt;- Cars93.summary[,"abbrev"]
+type &lt;- Cars93.summary[[4]] # Take the object that is stored
+                            # in the fourth list element.
+type
+pause()
+
+attach(Cars93.summary)
+  # R can now access the columns of Cars93.summary directly
+abbrev
+detach("Cars93.summary")
+pause()
+
+#  To change the name of the \verb!abbrev! variable (the fourth column)
+names(Cars93.summary)[4] &lt;- "code"
+pause()
+
+#  To change all of the names, try
+names(Cars93.summary) &lt;- c("minpass","maxpass","number","code")
+
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

@@ -1,0 +1,52 @@
+dewpoint                package:DAAG                R Documentation
+
+_D_e_w_p_o_i_n_t _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'dewpoint' data frame has 72 rows and 3 columns. Monthly data
+     were obtained for a number of sites (in Australia) and a number of
+     months.
+
+_U_s_a_g_e:
+
+     dewpoint
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _m_a_x_t_e_m_p monthly minimum temperatures
+
+     _m_i_n_t_e_m_p monthly maximum temperatures
+
+     _d_e_w_p_t monthly average dewpoint for each combination of minimum and
+          maximum temperature readings (formerly dewpoint)
+
+_S_o_u_r_c_e:
+
+     Dr Edward Linacre, visiting fellow in the Australian National
+     University Department of Geography.
+
+_E_x_a_m_p_l_e_s:
+
+     print("Additive Model - Example 7.5")
+     require(splines)
+     attach(dewpoint)   
+     ds.lm <- lm(dewpt ~ bs(maxtemp,5) + bs(mintemp,5), data=dewpoint)
+     ds.fit <-predict(ds.lm, type="terms", se=TRUE)
+     oldpar <- par(mfrow=c(1,2))
+     plot(maxtemp, ds.fit$fit[,1], xlab="Maximum temperature",
+          ylab="Change from dewpoint mean",type="n")
+     lines(maxtemp,ds.fit$fit[,1])
+     lines(maxtemp,ds.fit$fit[,1]-2*ds.fit$se[,1],lty=2)
+     lines(maxtemp,ds.fit$fit[,1]+2*ds.fit$se[,1],lty=2)
+     plot(mintemp,ds.fit$fit[,2],xlab="Minimum temperature",
+          ylab="Change from dewpoint mean",type="n")
+     ord<-order(mintemp)
+     lines(mintemp[ord],ds.fit$fit[ord,2])
+     lines(mintemp[ord],ds.fit$fit[ord,2]-2*ds.fit$se[ord,2],lty=2)
+     lines(mintemp[ord],ds.fit$fit[ord,2]+2*ds.fit$se[ord,2],lty=2)
+     detach(dewpoint)
+     par(oldpar)
+

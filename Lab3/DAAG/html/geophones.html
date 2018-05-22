@@ -1,0 +1,44 @@
+<html><head><title>R: Seismic Timing Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for geophones {DAAG}"><tr><td>geophones {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Seismic Timing Data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+The <code>geophones</code> data frame has 56 rows and 2 columns.
+Thickness of a layer of Alberta substratum as measured by
+a line of geophones.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>geophones</pre>
+
+
+<h3>Format</h3>
+
+<p>
+This data frame contains the following columns:
+<dl>
+<dt>distance</dt><dd>location of geophone.</dd>
+<dt>thickness</dt><dd>time for signal to pass through substratum.</dd>
+</dl>
+
+<h3>Examples</h3>
+
+<pre>
+plot(geophones)
+lines(lowess(geophones, f=.25))
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

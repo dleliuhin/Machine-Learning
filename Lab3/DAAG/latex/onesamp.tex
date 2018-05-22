@@ -1,0 +1,42 @@
+\HeaderA{onesamp}{Paired Sample t-test}{onesamp}
+\keyword{models}{onesamp}
+\begin{Description}\relax
+This function performs a t-test for the mean difference for paired data,
+and produces a scatterplot of one column against the other column, showing 
+whether there was any benefit to using the paired design.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+onesamp(dset=corn, x="unsprayed", y="sprayed", xlab=NULL, ylab=NULL, dubious=NULL, conv=NULL, dig=2)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{dset}] a matrix or dataframe having two columns
+\item[\code{x}] name of column to play the role of the `predictor' 
+\item[\code{y}] name of column to play the role of the `response' 
+\item[\code{xlab}] horizontal axis label 
+\item[\code{ylab}] vertical axis label 
+\item[\code{dubious}] 
+\item[\code{conv}] 
+\item[\code{dig}] 
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+A scatterplot of \code{y} against \code{x} together with estimates
+of standard errors and standard errors of the difference 
+(\code{y}-\code{x}).
+
+Also produced is a confidence interval and p-value for the test.
+\end{Value}
+\begin{Author}\relax
+J.H. Maindonald
+\end{Author}
+\begin{Examples}
+\begin{ExampleCode}
+onesamp(dset = pair65, x = "ambient", y = "heated", xlab =
+        "Amount of stretch (ambient)", ylab =
+        "Amount of stretch (heated)") 
+\end{ExampleCode}
+\end{Examples}
+

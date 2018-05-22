@@ -1,0 +1,39 @@
+onetPermutation             package:DAAG             R Documentation
+
+_O_n_e _S_a_m_p_l_e _P_e_r_m_u_t_a_t_i_o_n _t-_t_e_s_t
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function computes the p-value for the one sample t-test using
+     a permutation test.  The permutation density can  also be plotted.
+
+_U_s_a_g_e:
+
+     onetPermutation(x=pair65$heated - pair65$ambient, nsim=2000, plotit=TRUE)
+
+_A_r_g_u_m_e_n_t_s:
+
+       x: a numeric vector containing the sample values (centered at
+          the null hypothesis value) 
+
+    nsim: the number of permutations (randomly selected)
+
+  plotit: if TRUE, the permutation density is plotted 
+
+_V_a_l_u_e:
+
+     The p-value for the test of the hypothesis that the mean of 'x'
+     differs from 0
+
+_A_u_t_h_o_r(_s):
+
+     J.H. Maindonald
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Good, P. 2000. Permutation Tests. Springer, New York.
+
+_E_x_a_m_p_l_e_s:
+
+     onetPermutation()
+

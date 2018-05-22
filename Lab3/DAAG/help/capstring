@@ -1,0 +1,33 @@
+capstring                package:DAAG                R Documentation
+
+_C_o_n_v_e_r_t_s _i_n_i_t_i_a_l _c_h_a_r_a_c_t_e_r _o_f _a _s_t_r_i_n_g _t_o _u_p_p_e_r _c_a_s_e
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function is useful for use before plotting, if one wants
+     capitalized axis labels or factor levels.
+
+_U_s_a_g_e:
+
+     capstring(names)
+
+_A_r_g_u_m_e_n_t_s:
+
+   names: a character vector
+
+_V_a_l_u_e:
+
+a character vector with upper case initial values: 
+
+_A_u_t_h_o_r(_s):
+
+     W.J. Braun
+
+_E_x_a_m_p_l_e_s:
+
+     capstring(names(tinting)[c(3,4)])
+
+     library(lattice)
+     levels(tinting$agegp) <- capstring(levels(tinting$agegp))
+     xyplot(csoa ~ it | sex * agegp, data=tinting) 
+

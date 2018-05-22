@@ -1,0 +1,18 @@
+pause                  package:DAAG                  R Documentation
+
+_P_a_u_s_e _b_e_f_o_r_e _c_o_n_t_i_n_u_i_n_g _e_x_e_c_u_t_i_o_n
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     If a program produces several plots, isertion of 'pause()' between
+     two plots suspends execution until the <Enter> key is pressed, to
+     allow inspection of the current plot.
+
+_U_s_a_g_e:
+
+     pause()
+
+_A_u_t_h_o_r(_s):
+
+     From the `sm' package of Bowman and Azzalini (1997)
+

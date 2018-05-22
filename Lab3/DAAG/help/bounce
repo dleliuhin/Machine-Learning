@@ -1,0 +1,52 @@
+bounce                 package:DAAG                 R Documentation
+
+_S_e_p_a_r_a_t_e _p_l_o_t_t_i_n_g _p_o_s_i_t_i_o_n_s _f_o_r _l_a_b_e_l_s, _t_o _a_v_o_i_d _o_v_e_r_l_a_p
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Return univariate plotting positions in which neighboring points
+     are separated, if and as necessary, so that they are the specified
+     minimum distance apart.
+
+_U_s_a_g_e:
+
+     bounce(y, d, log = FALSE)
+
+_A_r_g_u_m_e_n_t_s:
+
+       y: A numeric vector of plotting positions
+
+       d: Minimum required distance between neighboring positions
+
+     log: 'TRUE' if values are will be plotted on a logarithmic scale.
+
+_D_e_t_a_i_l_s:
+
+     The centroid(s) of groups of points that are moved relative to
+     each other remain the same.
+
+_V_a_l_u_e:
+
+     A vector of values such that, when plotted along a line,
+     neighboring points are the required minimum distance apart.
+
+_N_o_t_e:
+
+     If values are plotted on a logarithmic scale, 'd' is the required
+     distance apart on that scale. If a base other than 10 is required,
+     set 'log' equal to that base.  (Note that base 10 is the default
+     for 'plot' with 'log=TRUE'.)
+
+_A_u_t_h_o_r(_s):
+
+     John Maindonald
+
+_S_e_e _A_l_s_o:
+
+     See also 'onewayPlot'
+
+_E_x_a_m_p_l_e_s:
+
+     bounce(c(4, 1.8, 2, 6), d=.4)
+     bounce(c(4, 1.8, 2, 6), d=.1, log=TRUE)
+

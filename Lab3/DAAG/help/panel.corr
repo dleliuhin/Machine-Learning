@@ -1,0 +1,34 @@
+panel.corr               package:DAAG               R Documentation
+
+_S_c_a_t_t_e_r_p_l_o_t _P_a_n_e_l
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function produces a bivariate scatterplot with the Pearson 
+     correlation.  This is for use with the function 'panelplot'.
+
+_U_s_a_g_e:
+
+     panel.corr(data, ...)
+
+_A_r_g_u_m_e_n_t_s:
+
+    data: A data frame with columns x and y
+
+     ...: Additional arguments
+
+_A_u_t_h_o_r(_s):
+
+     J.H. Maindonald
+
+_E_x_a_m_p_l_e_s:
+
+     # correlation between body and brain weights for 20 mice:
+
+     weights <- litters[,-1]
+     names(weights) <-  c("x","y")
+     weights <- list(weights)
+     weights[[1]]$xlim <- range(litters[,2])
+     weights[[1]]$ylim <- range(litters[,3])
+     panelplot(weights, panel.corr, totrows=1, totcols=1)
+

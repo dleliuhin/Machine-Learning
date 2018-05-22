@@ -1,0 +1,75 @@
+tinting                 package:DAAG                 R Documentation
+
+_C_a_r _W_i_n_d_o_w _T_i_n_t_i_n_g _E_x_p_e_r_i_m_e_n_t _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     These data are from an experiment that aimed to model the effects
+     of the tinting of car windows on visual performance. The authors
+     were mainly interested in effects on side window vision, and hence
+     in visual recognition tasks that would be performed when looking
+     through side windows.
+
+_U_s_a_g_e:
+
+     tinting
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _c_a_s_e observation number
+
+     _i_d subject identifier code (1-26)
+
+     _a_g_e age (in years) 
+
+     _s_e_x a factor with levels 'f' female, 'm' male
+
+     _t_i_n_t an ordered factor with levels representing degree of tinting:
+          'no' < 'lo' < 'hi'
+
+     _t_a_r_g_e_t a factor with levels 'locon': low contrast, 'hicon': high
+          contrast 
+
+     _i_t the inspection time, the time required to perform a simple
+          discrimination task (in milliseconds)
+
+     _c_s_o_a critical stimulus onset asynchrony, the time  to recognize an
+          alphanumeric target (in milliseconds)
+
+     _a_g_e_g_p a factor with levels 'younger', 21-27,  'older', 70-78 
+
+_D_e_t_a_i_l_s:
+
+     Visual light transmittance (VLT) levels were 100% (tint=none), 
+     81.3% (tint=lo), and 35.1% (tint=hi).  Based on these and other 
+     data, Burns et al. argue that road safety may be compromised if 
+     the front side windows of cars are tinted to 35
+
+_S_o_u_r_c_e:
+
+     Burns, N.R., Nettlebeck, T., White, M. and Willson, J., 1999.
+     Effects of car window tinting on visual performance: a comparison
+     of younger and older drivers. Ergonomics 42: 428-443.
+
+_E_x_a_m_p_l_e_s:
+
+     require(lattice)
+     levels(tinting$agegp) <- capstring(levels(tinting$agegp))
+     xyplot(csoa ~ it | sex * agegp, data=tinting) # Simple use of xyplot()
+     pause()
+
+     xyplot(csoa ~ it|sex*agegp, data=tinting, panel=panel.superpose, groups=target)
+     pause()
+
+     xyplot(csoa ~ it|sex*agegp, data=tinting, panel=panel.superpose, col=1:2,
+       groups=target, key=list(x=0.14, y=0.84, points=list(pch=rep(1,2),
+       col=1:2), text=list(levels(tinting$target), col=1:2), border=TRUE))
+     pause()
+
+     xyplot(csoa ~ it|sex*agegp, data=tinting, panel=panel.superpose,
+       groups=tint, type=c("p","smooth"), span=0.8, col=1:3,
+       key=list(x=0.14, y=0.84, points=list(pch=rep(1,2), col=1:3),
+       text=list(levels(tinting$tint), col=1:3), border=TRUE))
+

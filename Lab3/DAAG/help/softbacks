@@ -1,0 +1,33 @@
+softbacks                package:DAAG                R Documentation
+
+_M_e_a_s_u_r_e_m_e_n_t_s _o_n _a _S_e_l_e_c_t_i_o_n _o_f _P_a_p_e_r_b_a_c_k _B_o_o_k_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This is a subset of the 'allbacks' data frame  which gives
+     measurements on the volume and weight of 8 paperback books.
+
+_U_s_a_g_e:
+
+     softbacks
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _v_o_l_u_m_e a numeric vector giving the book volumes in cubic
+          centimeters
+
+     _w_e_i_g_h_t a numeric vector giving the weights in grams
+
+_S_o_u_r_c_e:
+
+     The bookshelf of J. H. Maindonald.
+
+_E_x_a_m_p_l_e_s:
+
+     print("Outliers in Simple Regression - Example 5.2")
+     paperback.lm <- lm(weight ~ volume, data=softbacks)
+     summary(paperback.lm)
+     plot(paperback.lm)
+

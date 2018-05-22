@@ -1,0 +1,70 @@
+allbacks                package:DAAG                R Documentation
+
+_M_e_a_s_u_r_e_m_e_n_t_s _o_n _a _S_e_l_e_c_t_i_o_n _o_f _B_o_o_k_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'allbacks' data frame gives measurements on the volume and
+     weight of 15 books, some of which are softback (pb) and some of
+     which are hardback (hb).  Area of the hardback covers is also
+     included.
+
+_U_s_a_g_e:
+
+     allbacks
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _v_o_l_u_m_e book volumes in cubic centimeters
+
+     _a_r_e_a hard board cover areas in square centimeters
+
+     _w_e_i_g_h_t book weights in grams
+
+     _c_o_v_e_r a factor with levels 'hb' hardback,   'pb' paperback .in -5 
+
+_S_o_u_r_c_e:
+
+     The bookshelf of J. H. Maindonald.
+
+_E_x_a_m_p_l_e_s:
+
+     print("Multiple Regression - Example 6.1")
+     attach(allbacks)
+     volume.split <- split(volume, cover)
+     weight.split <- split(weight, cover)
+     plot(weight.split$hb ~ volume.split$hb, pch=16, xlim=range(volume), ylim=range(weight),
+          ylab="Weight (g)", xlab="Volume (cc)")
+     points(weight.split$pb ~ volume.split$pb, pch=16, col=2)
+     pause()
+
+     allbacks.lm <- lm(weight ~ volume+area)
+     summary(allbacks.lm)
+     detach(allbacks)
+     pause()
+
+     anova(allbacks.lm)
+     pause()
+
+     model.matrix(allbacks.lm)
+     pause()
+
+     print("Example 6.1.1")
+     allbacks.lm0 <- lm(weight ~ -1+volume+area, data=allbacks);
+     summary(allbacks.lm0)
+     pause()
+
+     print("Example 6.1.2")
+     oldpar <- par(mfrow=c(2,2))
+     plot(allbacks.lm0)
+     par(oldpar)
+     allbacks.lm13 <- lm(weight ~ -1+volume+area, data=allbacks[-13,])
+     summary(allbacks.lm13)
+     pause()
+
+     print("Example 6.1.3")
+     round(coef(allbacks.lm0),2)  # Baseline for changes
+     round(lm.influence(allbacks.lm0)$coef,2)
+

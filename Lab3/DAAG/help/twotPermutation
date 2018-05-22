@@ -1,0 +1,46 @@
+twotPermutation             package:DAAG             R Documentation
+
+_T_w_o _S_a_m_p_l_e _P_e_r_m_u_t_a_t_i_o_n _T_e_s_t
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function computes the p-value for the two sample t-test using
+     a permutation test.  The permutation density can  also be plotted.
+
+_U_s_a_g_e:
+
+     twotPermutation(x1=two65$ambient, x2=two65$heated, nsim=2000, plotit=TRUE)
+
+_A_r_g_u_m_e_n_t_s:
+
+      x1: Sample 1
+
+      x2: Sample 2
+
+    nsim: Number of simulations
+
+  plotit: If TRUE, the permutation density will be plotted
+
+_D_e_t_a_i_l_s:
+
+     Suppose we have n1 values in one group and n2 in a second, with n
+     = n1 + n2. The permutation distribution results from taking all
+     possible samples of n2 values from the total of n values.
+
+_V_a_l_u_e:
+
+     The p-value for the test of the hypothesis that the mean of 'x1'
+     differs from 'x2'
+
+_A_u_t_h_o_r(_s):
+
+     J.H. Maindonald
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Good, P. 2000. Permutation Tests. Springer, New York.
+
+_E_x_a_m_p_l_e_s:
+
+     twotPermutation()
+

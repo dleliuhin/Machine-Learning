@@ -1,0 +1,37 @@
+pair65                 package:DAAG                 R Documentation
+
+_H_e_a_t_e_d _E_l_a_s_t_i_c _B_a_n_d_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'pair65' data frame has 9 rows and 2 columns. Eighteen elastic
+     bands were divided into nine pairs, with bands of similar
+     stretchiness placed in the same pair. One member of each pair was
+     placed in hot water (60-65 degrees C) for four minutes, while the
+     other was left at ambient temperature.  After a wait of about ten
+     minutes, the amounts of stretch, under a 1.35 kg weight, were
+     recorded.
+
+_U_s_a_g_e:
+
+     pair65
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _h_e_a_t_e_d a numeric vector giving the stretch lengths for the heated
+          bands
+
+     _a_m_b_i_e_n_t a numeric vector giving the stretch lengths for the
+          unheated bands
+
+_S_o_u_r_c_e:
+
+     J.H. Maindonald
+
+_E_x_a_m_p_l_e_s:
+
+     mean(pair65$heated - pair65$ambient)
+     sd(pair65$heated - pair65$ambient)
+

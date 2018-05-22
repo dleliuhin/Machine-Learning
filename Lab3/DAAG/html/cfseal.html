@@ -1,0 +1,73 @@
+<html><head><title>R: Cape Fur Seal Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for cfseal {DAAG}"><tr><td>cfseal {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Cape Fur Seal Data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+The <code>cfseal</code> data frame has 30 rows and 11 columns consisting
+of weight measurements for various organs taken from 30 Cape Fur
+Seals that died as an unintended consequence of commercial fishing.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>cfseal</pre>
+
+
+<h3>Format</h3>
+
+<p>
+This data frame contains the following columns:
+<dl>
+<dt>age</dt><dd>a numeric vector</dd>
+<dt>weight</dt><dd>a numeric vector</dd>
+<dt>heart</dt><dd>a numeric vector</dd>
+<dt>lung</dt><dd>a numeric vector</dd>
+<dt>liver</dt><dd>a numeric vector</dd>
+<dt>spleen</dt><dd>a numeric vector</dd>
+<dt>stomach</dt><dd>a numeric vector</dd>
+<dt>leftkid</dt><dd>a numeric vector</dd>
+<dt>rightkid</dt><dd>a numeric vector</dd>
+<dt>kidney</dt><dd>a numeric vector</dd>
+<dt>intestines</dt><dd>a numeric vector</dd>
+</dl>
+
+<h3>Source</h3>
+
+<p>
+Stewardson, C.L., Hemsley, S., Meyer, M.A., Canfield,
+P.J. and Maindonald, J.H. 1999.  Gross and microscopic visceral
+anatomy of the male Cape fur seal, Arctocephalus pusillus pusillus
+(Pinnepedia: Otariidae), with reference to organ size and growth.
+Journal of Anatomy (Cambridge) 195: 235-255.  (WWF project ZA-348)
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Allometric Growth - Example 5.7")
+
+cfseal.lm &lt;- lm(log(heart) ~ log(weight), data=cfseal); summary(cfseal.lm)
+plot(log(heart) ~ log(weight), data = cfseal, pch=16, xlab = "Heart Weight (g, log scale)", 
+ylab = "Body weight (kg, log scale)", axes=FALSE)
+heartaxis &lt;- 100*(2^seq(0,3))
+bodyaxis &lt;- c(20,40,60,100,180)
+axis(1, at = log(bodyaxis), lab = bodyaxis)
+axis(2, at = log(heartaxis), lab = heartaxis)
+box()
+abline(cfseal.lm)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

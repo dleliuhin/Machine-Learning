@@ -1,0 +1,64 @@
+<html><head><title>R: Converts initial character of a string to upper case</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for capstring {DAAG}"><tr><td>capstring {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Converts initial character of a string to upper case</h2>
+
+
+<h3>Description</h3>
+
+<p>
+This function is useful for use before
+plotting, if one wants capitalized axis labels or factor
+levels.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+capstring(names)
+
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>names</code></td>
+<td>
+a character vector</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>a character vector with upper case initial values</code></td>
+<td>
+</td></tr>
+</table>
+
+<h3>Author(s)</h3>
+
+<p>
+W.J. Braun
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+capstring(names(tinting)[c(3,4)])
+
+library(lattice)
+levels(tinting$agegp) &lt;- capstring(levels(tinting$agegp))
+xyplot(csoa ~ it | sex * agegp, data=tinting) 
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

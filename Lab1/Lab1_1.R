@@ -1,7 +1,7 @@
 #-------------------1------------------------
 library(e1071)
 # импортируем данные в R
-# установить параметр stringsAsFactors = TRUE, 
+# установить параметр stringsAsFactors = TRUE,
 # так как все данные - категориальные
 A_raw <- read.table("Tic_tac_toe.txt", sep = ",", stringsAsFactors = TRUE)
 # число строк в базе

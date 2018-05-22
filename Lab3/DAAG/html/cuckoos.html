@@ -1,0 +1,88 @@
+<html><head><title>R: Cuckoo Eggs Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for cuckoos {DAAG}"><tr><td>cuckoos {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Cuckoo Eggs Data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Length and breadth measurements of 120 eggs lain in the nests of six 
+different species of host bird.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>cuckoos</pre>
+
+
+<h3>Format</h3>
+
+<p>
+This data frame contains the following columns:
+<dl>
+<dt>length</dt><dd>the egg lengths in millimeters</dd>
+<dt>breadth</dt><dd>the egg breadths in millimeters</dd>
+<dt>species</dt><dd>a factor with levels
+<code>hedge.sparrow</code>, 
+<code>meadow.pipit</code>, 
+<code>pied.wagtail</code>, 
+<code>robin</code>, 
+<code>tree.pipit</code>, 
+<code>wren</code> 
+</dd> 
+<dt>id</dt><dd>a numeric vector</dd>
+</dl>
+
+<h3>Source</h3>
+
+<p>
+Latter, O.H. (1902). The eggs of Cuculus canorus. An
+Inquiry into the dimensions of the cuckoo's egg and the relation of the
+variations to the size of the eggs of the foster-parent, with notes on
+coloration, &amp;c. Biometrika i, 164.
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Tippett, L.H.C. 1931: "The Methods of Statistics". Williams &amp; Norgate, 
+London.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre> 
+print("Strip and Boxplots - Example 2.1.2")
+
+attach(cuckoos)
+oldpar &lt;- par(las = 2) # labels at right angle to axis.
+stripchart(length ~ species) 
+boxplot(split(cuckoos$length, cuckoos$species),
+         xlab="Length of egg", horizontal=TRUE)
+detach(cuckoos)
+par(oldpar)
+pause()
+
+print("Summaries - Example 2.2.2")
+sapply(split(cuckoos$length, cuckoos$species), sd)
+pause()
+
+print("Example 4.1.4")
+wren &lt;- split(cuckoos$length, cuckoos$species)$wren
+median(wren)
+n &lt;- length(wren)
+sqrt(pi/2)*sd(wren)/sqrt(n)  # this s.e. computation assumes normality
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

@@ -1,0 +1,54 @@
+sorption                package:DAAG                R Documentation
+
+_s_o_r_p_t_i_o_n _d_a_t_a _s_e_t
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Concentration-time measurements on different varieties of apples
+     under methyl bromide injection.
+
+_U_s_a_g_e:
+
+     data(sorption)
+
+_F_o_r_m_a_t:
+
+     A data frame with 192 observations on the following 14 variables.
+
+     _m_5 a numeric vector
+
+     _m_1_0 a numeric vector
+
+     _m_3_0 a numeric vector
+
+     _m_6_0 a numeric vector
+
+     _m_9_0 a numeric vector
+
+     _m_1_2_0 a numeric vector
+
+     _c_t concentration-time
+
+     _C_u_l_t_i_v_a_r a factor with levels 'Pacific Rose' 'BRAEBURN' 'Fuji'
+          'GRANNY' 'Gala' 'ROYAL' 'Red Delicious' 'Splendour'
+
+     _D_o_s_e injected dose of methyl bromide
+
+     _r_e_p replicate number, within Cultivar and year
+
+     _y_e_a_r a factor with levels '1988' '1989' '1998' '1999'
+
+     _y_e_a_r._r_e_p a factor with levels '1988:1' '1988:2' '1988:3' '1989:1'
+          '1989:2' '1998:1' '1998:2' '1998:3' '1999:1' '1999:2'
+
+     _g_p a factor with levels 'BRAEBURN1' 'BRAEBURN2' 'Fuji1' 'Fuji10'
+          'Fuji2' 'Fuji6' 'Fuji7' 'Fuji8' 'Fuji9' 'GRANNY1' 'GRANNY2'
+          'Gala4' 'Gala5' 'Pacific Rose10' 'Pacific Rose6' 'Pacific
+          Rose7' 'Pacific Rose8' 'Pacific Rose9' 'ROYAL1' 'ROYAL2' 'Red
+          Del10' 'Red Del9' 'Red Delicious1' 'Red Delicious2' 'Red
+          Delicious3' 'Red Delicious4' 'Red Delicious5' 'Red
+          Delicious6' 'Red Delicious7' 'Red Delicious8' 'Splendour4'
+          'Splendour5'
+
+     _i_n_y_e_a_r a factor with levels '1' '2' '3' '4' '5' '6'
+

@@ -1,0 +1,39 @@
+leaftemp.all              package:DAAG              R Documentation
+
+_F_u_l_l _L_e_a_f _a_n_d _A_i_r _T_e_m_p_e_r_a_t_u_r_e _D_a_t_a _S_e_t
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'leaftemp.all' data frame has 62 rows and 9 columns.
+
+_U_s_a_g_e:
+
+     leaftemp.all
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _g_l_a_s_s_h_o_u_s_e a factor with levels 'A', 'B', 'C' 
+
+     _C_O_2_l_e_v_e_l a factor with Carbon Dioxide Levels: 'high', 'low',
+          'medium' 
+
+     _d_a_y a factor
+
+     _l_i_g_h_t a numeric vector
+
+     _C_O_2 a numeric vector
+
+     _t_e_m_p_D_i_f_f Difference between Leaf and Air Temperature
+
+     _B_t_e_m_p_D_i_f_f a numeric vector
+
+     _a_i_r_T_e_m_p Air Temperature
+
+     _v_a_p_P_r_e_s_s Vapour Pressure
+
+_S_o_u_r_c_e:
+
+     J.H. Maindonald
+

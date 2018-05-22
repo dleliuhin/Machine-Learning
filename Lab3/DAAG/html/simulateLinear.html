@@ -1,0 +1,73 @@
+<html><head><title>R: Simulation of Linear Models for ANOVA vs. Regression Comparison</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for simulateLinear {DAAG}"><tr><td>simulateLinear {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Simulation of Linear Models for ANOVA vs. Regression Comparison</h2>
+
+
+<h3>Description</h3>
+
+<p>
+This function simulates a number of bivariate data sets
+in which there are replicates at each level of the predictor.
+The p-values for ANOVA and for the regression slope are 
+compared.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+simulateLinear(sd=2, npoints=5, nrep=4, nsets=200, type="xy", seed=21)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>sd</code></td>
+<td>
+The error standard deviation</td></tr>
+<tr valign="top"><td><code>npoints</code></td>
+<td>
+Number of distinct predictor levels</td></tr>
+<tr valign="top"><td><code>nrep</code></td>
+<td>
+Number of replications at each level</td></tr>
+<tr valign="top"><td><code>nsets</code></td>
+<td>
+Number of simulation runs</td></tr>
+<tr valign="top"><td><code>type</code></td>
+<td>
+Type of data</td></tr>
+<tr valign="top"><td><code>seed</code></td>
+<td>
+Random Number generator seed</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+The proportion of regression p-values that are less than the ANOVA p-values is
+printed</p>
+
+<h3>Author(s)</h3>
+
+<p>
+J.H. Maindonald
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+simulateLinear()
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

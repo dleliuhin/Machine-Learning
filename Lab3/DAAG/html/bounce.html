@@ -1,0 +1,89 @@
+<html><head><title>R: Separate plotting positions for labels, to avoid overlap</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for bounce {DAAG}"><tr><td>bounce {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Separate plotting positions for labels, to avoid overlap</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Return univariate plotting positions in which neighboring points are
+separated, if and as necessary, so that they are the specified minimum
+distance apart.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+bounce(y, d, log = FALSE)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>y</code></td>
+<td>
+A numeric vector of plotting positions</td></tr>
+<tr valign="top"><td><code>d</code></td>
+<td>
+Minimum required distance between neighboring positions</td></tr>
+<tr valign="top"><td><code>log</code></td>
+<td>
+<code>TRUE</code> if values are will be plotted on a logarithmic scale.</td></tr>
+</table>
+
+<h3>Details</h3>
+
+<p>
+The centroid(s) of groups of points that are moved relative to each
+other remain the same.
+</p>
+
+
+<h3>Value</h3>
+
+<p>
+A vector of values such that, when plotted along a line, neighboring
+points are the required minimum distance apart.</p>
+
+<h3>Note</h3>
+
+<p>
+If values are plotted on a logarithmic scale, <code>d</code> is the required
+distance apart on that scale. If a base other than 10 is required, set
+<code>log</code> equal to that base.  (Note that base 10 is the default for
+<code>plot</code> with <code>log=TRUE</code>.)
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>
+John Maindonald
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+See also <code><a href="onewayPlot.html">onewayPlot</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+bounce(c(4, 1.8, 2, 6), d=.4)
+bounce(c(4, 1.8, 2, 6), d=.1, log=TRUE)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.88 <a href="00Index.html">Index]</a></div>
+
+</body></html>

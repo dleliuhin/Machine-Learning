@@ -1,0 +1,35 @@
+roller                 package:DAAG                 R Documentation
+
+_L_a_w_n _R_o_l_l_e_r _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'roller' data frame has 10 rows and 2 columns. Different
+     weights of roller were rolled over different parts of a lawn, and
+     the depression was recorded.
+
+_U_s_a_g_e:
+
+     roller
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _w_e_i_g_h_t a numeric vector consisting of the roller weights
+
+     _d_e_p_r_e_s_s_i_o_n the depth of the depression made in the grass under the
+          roller
+
+_S_o_u_r_c_e:
+
+     Stewart, K.M., Van Toor, R.F., Crosbie, S.F. 1988. Control of
+     grass grub (Coleoptera: Scarabaeidae) with rollers of different
+     design. N.Z. Journal of Experimental Agriculture 16: 141-150.
+
+_E_x_a_m_p_l_e_s:
+
+     plot(roller)
+     roller.lm <- lm(depression ~ weight, data = roller)
+     plot(roller.lm, which = 4)
+

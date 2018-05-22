@@ -1,0 +1,74 @@
+austpop                 package:DAAG                 R Documentation
+
+_P_o_p_u_l_a_t_i_o_n _f_i_g_u_r_e_s _f_o_r _A_u_s_t_r_a_l_i_a_n _S_t_a_t_e_s _a_n_d _T_e_r_r_i_t_o_r_i_e_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Population figures for Australian states and territories for 1917,
+     1927, ..., 1997.
+
+_U_s_a_g_e:
+
+     austpop
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _y_e_a_r a numeric vector
+
+     _N_S_W New South Wales population counts 
+
+     _V_i_c Victoria population counts
+
+     _Q_l_d Queensland population counts
+
+     _S_A South Australia population counts
+
+     _W_A Western Australia population counts
+
+     _T_a_s Tasmania population counts
+
+     _N_T Northern Territory population  counts
+
+     _A_C_T Australian Capital Territory  population counts
+
+     _A_u_s_t Population counts for the whole country
+
+_S_o_u_r_c_e:
+
+     Australian Bureau of Statistics
+
+_E_x_a_m_p_l_e_s:
+
+     print("Looping - Example 1.7")
+
+     growth.rates <- numeric(8)
+     for (j in seq(2,9)) {
+         growth.rates[j-1] <- (austpop[9, j]-austpop[1, j])/austpop[1, j] }
+     growth.rates <- data.frame(growth.rates)
+     row.names(growth.rates) <- names(austpop[c(-1,-10)])
+       # Note the use of row.names() to name the rows of the data frame
+     growth.rates
+
+     pause()
+     print("Avoiding Loops - Example 1.7b")
+
+     sapply(austpop[,-c(1,10)], function(x){(x[9]-x[1])/x[1]})
+
+     pause()
+     print("Plot - Example 1.8a")
+     attach(austpop)
+     plot(year, ACT, type="l") # Join the points ("l" = "line")
+     detach(austpop)
+
+     pause()
+     print("Exerice 1.12.9")
+     attach(austpop)
+     oldpar <- par(mfrow=c(2,4))  
+     for (i in 2:9){
+     plot(austpop[,1], log(austpop[, i]), xlab="Year",
+         ylab=names(austpop)[i], pch=16, ylim=c(0,10))}
+     par(oldpar) 
+     detach(austpop)
+

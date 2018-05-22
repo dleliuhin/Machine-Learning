@@ -1,0 +1,42 @@
+\HeaderA{twot.permutation}{Two Sample Permutation Test - Obsolete}{twot.permutation}
+\keyword{models}{twot.permutation}
+\begin{Description}\relax
+This function computes the p-value for the two sample
+t-test using a permutation test.  The permutation density
+can  also be plotted.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+twot.permutation(x1=two65$ambient, x2=two65$heated, nsim=2000, plotit=TRUE)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{x1}] Sample 1
+\item[\code{x2}] Sample 2
+\item[\code{nsim}] Number of simulations
+\item[\code{plotit}] If TRUE, the permutation density will be plotted
+\end{ldescription}
+\end{Arguments}
+\begin{Details}\relax
+Suppose we have n1 values in one group and n2 in a
+second, with n = n1 + n2. The permutation distribution
+results from taking all possible samples of n2 values from
+the total of n values.
+\end{Details}
+\begin{Value}
+The p-value for the test of the hypothesis that the mean of
+\code{x1} differs from \code{x2}
+\end{Value}
+\begin{Author}\relax
+J.H. Maindonald
+\end{Author}
+\begin{References}\relax
+Good, P. 2000. Permutation Tests. Springer, New York.
+\end{References}
+\begin{Examples}
+\begin{ExampleCode}
+twot.permutation()
+\end{ExampleCode}
+\end{Examples}
+

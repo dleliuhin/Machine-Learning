@@ -1,0 +1,66 @@
+<html><head><title>R: Simple Logistic Regression Data Simulator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for logisticsim {DAAG}"><tr><td>logisticsim {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Simple Logistic Regression Data Simulator</h2>
+
+
+<h3>Description</h3>
+
+<p>
+This function simulates simple regression data from a 
+logistic model.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+logisticsim(x = seq(0, 1, length=101), a = 2, b = -4, seed=NULL)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+a numeric vector representing the explanatory variable</td></tr>
+<tr valign="top"><td><code>a</code></td>
+<td>
+the regression function intercept</td></tr>
+<tr valign="top"><td><code>b</code></td>
+<td>
+the regression function slope</td></tr>
+<tr valign="top"><td><code>seed</code></td>
+<td>
+numeric constant</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+a list consisting of
+</p>
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+the explanatory variable vector</td></tr>
+<tr valign="top"><td><code>y</code></td>
+<td>
+the Poisson response vector</td></tr>
+</table>
+
+<h3>Examples</h3>
+
+<pre>
+logisticsim()
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

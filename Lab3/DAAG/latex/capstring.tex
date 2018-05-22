@@ -1,0 +1,36 @@
+\HeaderA{capstring}{Converts initial character of a string to upper case}{capstring}
+\keyword{models}{capstring}
+\begin{Description}\relax
+This function is useful for use before
+plotting, if one wants capitalized axis labels or factor
+levels.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+capstring(names)
+
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{names}] a character vector
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+\begin{ldescription}
+\item[\code{a character vector with upper case initial values}] 
+\end{ldescription}
+\end{Value}
+\begin{Author}\relax
+W.J. Braun
+\end{Author}
+\begin{Examples}
+\begin{ExampleCode}
+capstring(names(tinting)[c(3,4)])
+
+library(lattice)
+levels(tinting$agegp) <- capstring(levels(tinting$agegp))
+xyplot(csoa ~ it | sex * agegp, data=tinting) 
+\end{ExampleCode}
+\end{Examples}
+

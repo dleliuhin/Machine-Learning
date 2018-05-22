@@ -1,0 +1,32 @@
+\HeaderA{oddbooks}{Measurements on 12 books}{oddbooks}
+\keyword{datasets}{oddbooks}
+\begin{Description}\relax
+Data giving thickness (mm), height (cm), width (cm)
+and weight (g), of 12 books.  Books were selected so that thickness
+decreased as page area increased
+\end{Description}
+\begin{Usage}
+\begin{verbatim}data(oddbooks)\end{verbatim}
+\end{Usage}
+\begin{Format}\relax
+A data frame with 12 observations on the following 4 variables.
+\describe{
+\item[thick] a numeric vector
+\item[height] a numeric vector
+\item[breadth] a numeric vector
+\item[weight] a numeric vector
+}
+\end{Format}
+\begin{Details}\relax
+\end{Details}
+\begin{Source}\relax
+JM took books from his library.
+\end{Source}
+\begin{Examples}
+\begin{ExampleCode}
+data(oddbooks)
+str(oddbooks)
+plot(oddbooks) 
+\end{ExampleCode}
+\end{Examples}
+

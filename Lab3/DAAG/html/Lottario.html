@@ -1,0 +1,60 @@
+<html><head><title>R: Ontario Lottery Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for Lottario {DAAG}"><tr><td>Lottario {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Ontario Lottery Data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+The data frame verb!Lottario!
+is a summary of 122 weekly draws of an Ontario lottery, beginning in
+November, 1978.  Each draw consists of 7 numbered balls, drawn without
+replacement from an urn consisting of balls numbered from 1 through 39.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Lottario</pre>
+
+
+<h3>Format</h3>
+
+<p>
+This data frame contains the following columns:
+<dl>
+<dt>Number</dt><dd>the integers from 1 to 39, representing the
+numbered balls</dd>
+<dt>Frequency</dt><dd>the number of occurrences of each numbered ball</dd>
+</dl>
+
+<h3>Source</h3>
+
+<p>
+The Ontario Lottery Corporation
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Bellhouse, D.R. (1982). Fair is fair:  new rules for Canadian lotteries.
+Canadian Public Policy - Analyse de Politiques 8: 311-320.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre> 
+order(Lottario$Frequency)[33:39]  # the 7 most frequently chosen numbers
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

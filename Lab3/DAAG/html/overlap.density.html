@@ -1,0 +1,82 @@
+<html><head><title>R: Overlapping Density Plots - obsolete</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for overlap.density {DAAG}"><tr><td>overlap.density {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Overlapping Density Plots - obsolete</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Densities for two independent samples are estimated and plotted.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+overlap.density(x0, x1, ratio=c(0.05, 20), compare.numbers=TRUE, 
+plotit=TRUE, gpnames=c("Control", "Treatment"), xlab="Score")
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x0</code></td>
+<td>
+control group measurements</td></tr>
+<tr valign="top"><td><code>x1</code></td>
+<td>
+treatment group measurements</td></tr>
+<tr valign="top"><td><code>ratio</code></td>
+<td>
+the range within which the relative numbers of
+observations from the two groups are
+required to lie.  [The relative numbers at
+any point are estimated from (density1*n1)/(density0*x0)]</td></tr>
+<tr valign="top"><td><code>compare.numbers</code></td>
+<td>
+If TRUE (default), then density plots
+are scaled to have total area equal to the sample size; otherwise
+total area under each density is 1</td></tr>
+<tr valign="top"><td><code>plotit</code></td>
+<td>
+If TRUE, a plot is produced</td></tr>
+<tr valign="top"><td><code>gpnames</code></td>
+<td>
+Names of the two samples</td></tr>
+<tr valign="top"><td><code>xlab</code></td>
+<td>
+Label for x-axis</td></tr>
+</table>
+
+<h3>Author(s)</h3>
+
+<p>
+J.H. Maindonald
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code>t.test</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+attach(two65)
+overlap.density(ambient,heated)
+t.test(ambient,heated)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

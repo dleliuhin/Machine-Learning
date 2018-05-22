@@ -1,0 +1,45 @@
+moths                  package:DAAG                  R Documentation
+
+_M_o_t_h_s _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The 'moths' data frame has 41 rows and 4 columns. These data are
+     from a study of the effect of habitat on the densities of two
+     species of moth (A and P).  Transects were set across the search
+     area.  Within transects, sections were identified according to
+     habitat type.
+
+_U_s_a_g_e:
+
+     moths
+
+_F_o_r_m_a_t:
+
+     This data frame contains the following columns:
+
+     _m_e_t_e_r_s length of transect
+
+     _A number of type A moths found
+
+     _P number of type P moths found
+
+     _h_a_b_i_t_a_t a factor with levels 'Bank', 'Disturbed', 'Lowerside',
+          'NEsoak', 'NWsoak', 'SEsoak', 'SWsoak', 'Upperside' 
+
+_S_o_u_r_c_e:
+
+     Sharyn Wragg, formerly of Australian National University
+
+_E_x_a_m_p_l_e_s:
+
+     print("Quasi Poisson Regression - Example 8.3")
+     rbind(table(moths[,4]), sapply(split(moths[,-4], moths$habitat), apply,2, 
+     sum))
+     A.glm <- glm(formula = A ~ log(meters) + factor(habitat), family = 
+     quasipoisson, data = moths)
+     summary(A.glm)
+     moths$habitat <- relevel(moths$habitat, ref="Lowerside")
+     A.glm <- glm(A ~ habitat + log(meters), family=quasipoisson, data=moths)
+     summary(A.glm)$coef
+

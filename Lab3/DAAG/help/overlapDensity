@@ -1,0 +1,60 @@
+overlapDensity             package:DAAG             R Documentation
+
+_O_v_e_r_l_a_p_p_i_n_g _D_e_n_s_i_t_y _P_l_o_t_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Densities for two independent samples are estimated and plotted.
+
+_U_s_a_g_e:
+
+     overlapDensity(x0, x1, ratio = c(0.05, 20), compare.numbers = FALSE,
+                 plotit = TRUE, gpnames = c("Control", "Treatment"),
+                 cutoffs=c(lower=TRUE, upper=TRUE), bw=FALSE,
+                 xlab = "Score", col=1:2, lty=1:2)
+
+_A_r_g_u_m_e_n_t_s:
+
+      x0: control group measurements
+
+      x1: treatment group measurements
+
+   ratio: the range within which the relative numbers of observations
+          from the two groups are required to lie.  [The relative
+          numbers at any point are estimated from
+          (density1*n1)/(density0*x0)]
+
+compare.numbers: If TRUE (default), then density plots are scaled to
+          have total area equal to the sample size; otherwise total
+          area under each density is 1
+
+  plotit: If TRUE, a plot is produced
+
+ gpnames: Names of the two samples
+
+ cutoffs: logical vector, indicating whether density estimates should
+          be truncated below (lower=TRUE) or above (upper=TRUE)
+
+      bw: logical, indicates whether to overwrite with a gray scale
+          plot
+
+    xlab: Label for x-axis
+
+     col: standard color parameter
+
+     lty: standard line type preference
+
+_A_u_t_h_o_r(_s):
+
+     J.H. Maindonald
+
+_S_e_e _A_l_s_o:
+
+     't.test'
+
+_E_x_a_m_p_l_e_s:
+
+     attach(two65)
+     overlapDensity(ambient,heated)
+     t.test(ambient,heated)
+

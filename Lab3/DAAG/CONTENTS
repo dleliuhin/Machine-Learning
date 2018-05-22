@@ -1,0 +1,755 @@
+Entry: ACF1
+Aliases: ACF1
+Keywords: datasets
+Description: Aberrant Crypt Foci in Rat Colons
+URL: ../../../library/DAAG/html/ACF1.html
+
+Entry: CVbinary
+Aliases: CVbinary
+Keywords: models
+Description: Cross-Validation for Regression with a Binary Response
+URL: ../../../library/DAAG/html/CVbinary.html
+
+Entry: CVlm
+Aliases: CVlm
+Keywords: models
+Description: Cross-Validation for Linear Regression
+URL: ../../../library/DAAG/html/CVlm.html
+
+Entry: Cars93.summary
+Aliases: Cars93.summary
+Keywords: datasets
+Description: A Summary of the Cars93 Data set
+URL: ../../../library/DAAG/html/Cars93.summary.html
+
+Entry: Lottario
+Aliases: Lottario
+Keywords: datasets
+Description: Ontario Lottery Data
+URL: ../../../library/DAAG/html/Lottario.html
+
+Entry: Manitoba.lakes
+Aliases: Manitoba.lakes
+Keywords: datasets
+Description: The Nine Largest Lakes in Manitoba
+URL: ../../../library/DAAG/html/Manitoba.lakes.html
+
+Entry: SP500W90
+Aliases: SP500W90
+Keywords: datasets
+Description: Closing Numbers for S and P 500 Index - First 100 Days of 1990
+URL: ../../../library/DAAG/html/SP500W90.html
+
+Entry: SP500close
+Aliases: SP500close
+Keywords: datasets
+Description: Closing Numbers for S and P 500 Index
+URL: ../../../library/DAAG/html/SP500close.html
+
+Entry: ais
+Aliases: ais
+Keywords: datasets
+Description: Australian athletes data set
+URL: ../../../library/DAAG/html/ais.html
+
+Entry: allbacks
+Aliases: allbacks
+Keywords: datasets
+Description: Measurements on a Selection of Books
+URL: ../../../library/DAAG/html/allbacks.html
+
+Entry: anesthetic
+Aliases: anesthetic
+Keywords: datasets
+Description: Anesthetic Effectiveness
+URL: ../../../library/DAAG/html/anesthetic.html
+
+Entry: ant111b
+Aliases: ant111b
+Keywords: datasets
+Description: Averages by block of corn yields, for treatment 111 only
+URL: ../../../library/DAAG/html/ant111b.html
+
+Entry: antigua
+Aliases: antigua
+Keywords: datasets
+Description: Averages by block of yields for the Antigua Corn data
+URL: ../../../library/DAAG/html/antigua.html
+
+Entry: appletaste
+Aliases: appletaste
+Keywords: datasets
+Description: Tasting experiment that compared four apple varieties
+URL: ../../../library/DAAG/html/appletaste.html
+
+Entry: austpop
+Aliases: austpop
+Keywords: datasets
+Description: Population figures for Australian States and Territories
+URL: ../../../library/DAAG/html/austpop.html
+
+Entry: bestsetNoise
+Aliases: bestsetNoise bestset.noise
+Keywords: models
+Description: Best Subset Selection Applied to Noise
+URL: ../../../library/DAAG/html/bestsetNoise.html
+
+Entry: biomass
+Aliases: biomass
+Keywords: datasets
+Description: Biomass Data
+URL: ../../../library/DAAG/html/biomass.html
+
+Entry: bomsoi
+Aliases: bomsoi
+Keywords: datasets
+Description: Southern Oscillation Index Data
+URL: ../../../library/DAAG/html/bomsoi.html
+
+Entry: bomsoi2001
+Aliases: bomsoi2001
+Keywords: datasets
+Description: Southern Oscillation Index Data
+URL: ../../../library/DAAG/html/bomsoi2001.html
+
+Entry: bostonc
+Aliases: bostonc
+Keywords: datasets
+Description: Boston Housing Data -- Corrected
+URL: ../../../library/DAAG/html/bostonc.html
+
+Entry: bounce
+Aliases: bounce
+Keywords: utilities
+Description: Separate plotting positions for labels, to avoid overlap
+URL: ../../../library/DAAG/html/bounce.html
+
+Entry: capstring
+Aliases: capstring
+Keywords: models
+Description: Converts initial character of a string to upper case
+URL: ../../../library/DAAG/html/capstring.html
+
+Entry: carprice
+Aliases: carprice
+Keywords: datasets
+Description: US Car Price Data
+URL: ../../../library/DAAG/html/carprice.html
+
+Entry: cerealsugar
+Aliases: cerealsugar
+Keywords: datasets
+Description: Percentage of Sugar in Breakfast Cereal
+URL: ../../../library/DAAG/html/cerealsugar.html
+
+Entry: cfseal
+Aliases: cfseal
+Keywords: datasets
+Description: Cape Fur Seal Data
+URL: ../../../library/DAAG/html/cfseal.html
+
+Entry: cities
+Aliases: cities
+Keywords: datasets
+Description: Populations of Major Canadian Cities (1992-96)
+URL: ../../../library/DAAG/html/cities.html
+
+Entry: codling
+Aliases: codling
+Keywords: datasets
+Description: Dose-mortality data, for fumigation of codling moth with methyl bromide
+URL: ../../../library/DAAG/html/codling.html
+
+Entry: compareTreecalcs
+Aliases: compareTreecalcs
+Keywords: models
+Description: Error rate comparisons for tree-based classification
+URL: ../../../library/DAAG/html/compareTreecalcs.html
+
+Entry: component.residual
+Aliases: component.residual
+Keywords: models
+Description: Component + Residual Plot
+URL: ../../../library/DAAG/html/component.residual.html
+
+Entry: cottonworkers
+Aliases: cottonworkers
+Keywords: datasets
+Description: Occupation and wage profiles of British cotton workers
+URL: ../../../library/DAAG/html/cottonworkers.html
+
+Entry: cuckoohosts
+Aliases: cuckoohosts
+Keywords: datasets
+Description: Comparison of cuckoo eggs with host eggs
+URL: ../../../library/DAAG/html/cuckoohosts.html
+
+Entry: cuckoos
+Aliases: cuckoos
+Keywords: datasets
+Description: Cuckoo Eggs Data
+URL: ../../../library/DAAG/html/cuckoos.html
+
+Entry: cv.binary
+Aliases: cv.binary
+Keywords: models
+Description: Cross-Validation for Regression with a Binary Response
+URL: ../../../library/DAAG/html/cv.binary.html
+
+Entry: cv.lm
+Aliases: cv.lm
+Keywords: models
+Description: Cross-Validation for Linear Regression
+URL: ../../../library/DAAG/html/cv.lm.html
+
+Entry: datafile
+Aliases: datafile
+Keywords: models
+Description: Create an ASCII data file
+URL: ../../../library/DAAG/html/datafile.html
+
+Entry: dengue
+Aliases: dengue
+Keywords: datasets
+Description: Dengue prevalence, by administrative region
+URL: ../../../library/DAAG/html/dengue.html
+
+Entry: dewpoint
+Aliases: dewpoint
+Keywords: datasets
+Description: Dewpoint Data
+URL: ../../../library/DAAG/html/dewpoint.html
+
+Entry: droughts
+Aliases: droughts
+Keywords: datasets
+Description: Periods Between Rain Events
+URL: ../../../library/DAAG/html/droughts.html
+
+Entry: elastic1
+Aliases: elastic1
+Keywords: datasets
+Description: Elastic Band Data Replicated
+URL: ../../../library/DAAG/html/elastic1.html
+
+Entry: elastic2
+Aliases: elastic2
+Keywords: datasets
+Description: Elastic Band Data Replicated Again
+URL: ../../../library/DAAG/html/elastic2.html
+
+Entry: elasticband
+Aliases: elasticband
+Keywords: datasets
+Description: Elastic Band Data
+URL: ../../../library/DAAG/html/elasticband.html
+
+Entry: fossilfuel
+Aliases: fossilfuel
+Keywords: datasets
+Description: Fossil Fuel Data
+URL: ../../../library/DAAG/html/fossilfuel.html
+
+Entry: fossum
+Aliases: fossum
+Keywords: datasets
+Description: Female Possum Measurements
+URL: ../../../library/DAAG/html/fossum.html
+
+Entry: frogs
+Aliases: frogs
+Keywords: datasets
+Description: Frogs Data
+URL: ../../../library/DAAG/html/frogs.html
+
+Entry: frostedflakes
+Aliases: frostedflakes
+Keywords: datasets
+Description: Frosted Flakes data
+URL: ../../../library/DAAG/html/frostedflakes.html
+
+Entry: fruitohms
+Aliases: fruitohms
+Keywords: datasets
+Description: Electrical Resistance of Kiwi Fruit
+URL: ../../../library/DAAG/html/fruitohms.html
+
+Entry: geophones
+Aliases: geophones
+Keywords: datasets
+Description: Seismic Timing Data
+URL: ../../../library/DAAG/html/geophones.html
+
+Entry: hardcopy
+Aliases: hardcopy
+Keywords: IO
+Description: Graphical Output for Hardcopy
+URL: ../../../library/DAAG/html/hardcopy.html
+
+Entry: head.injury
+Aliases: head.injury
+Keywords: datasets
+Description: Minor Head Injury (Simulated) Data
+URL: ../../../library/DAAG/html/head.injury.html
+
+Entry: headInjury
+Aliases: headInjury
+Keywords: datasets
+Description: Minor Head Injury (Simulated) Data
+URL: ../../../library/DAAG/html/headInjury.html
+
+Entry: hills
+Aliases: hills
+Keywords: datasets
+Description: Scottish Hill Races Data
+URL: ../../../library/DAAG/html/hills.html
+
+Entry: hills2000
+Aliases: hills2000
+Keywords: datasets
+Description: Scottish Hill Races Data - 2000
+URL: ../../../library/DAAG/html/hills2000.html
+
+Entry: houseprices
+Aliases: houseprices
+Keywords: datasets
+Description: Aranda House Prices
+URL: ../../../library/DAAG/html/houseprices.html
+
+Entry: humanpower
+Aliases: humanpower1 humanpower2
+Keywords: datasets
+Description: Oxygen uptake versus mechanical power, for humans
+URL: ../../../library/DAAG/html/humanpower.html
+
+Entry: ironslag
+Aliases: ironslag
+Keywords: datasets
+Description: Iron Content Measurements
+URL: ../../../library/DAAG/html/ironslag.html
+
+Entry: jobs
+Aliases: jobs
+Keywords: datasets
+Description: Canadian Labour Force Summary Data (1995-96)
+URL: ../../../library/DAAG/html/jobs.html
+
+Entry: kiwishade
+Aliases: kiwishade
+Keywords: datasets
+Description: Kiwi Shading Data
+URL: ../../../library/DAAG/html/kiwishade.html
+
+Entry: leafshape
+Aliases: leafshape
+Keywords: datasets
+Description: Full Leaf Shape Data Set
+URL: ../../../library/DAAG/html/leafshape.html
+
+Entry: leafshape17
+Aliases: leafshape17
+Keywords: datasets
+Description: Subset of Leaf Shape Data Set
+URL: ../../../library/DAAG/html/leafshape17.html
+
+Entry: leaftemp
+Aliases: leaftemp
+Keywords: datasets
+Description: Leaf and Air Temperature Data
+URL: ../../../library/DAAG/html/leaftemp.html
+
+Entry: leaftemp.all
+Aliases: leaftemp.all
+Keywords: datasets
+Description: Full Leaf and Air Temperature Data Set
+URL: ../../../library/DAAG/html/leaftemp.all.html
+
+Entry: litters
+Aliases: litters
+Keywords: datasets
+Description: Mouse Litters
+URL: ../../../library/DAAG/html/litters.html
+
+Entry: logisticsim
+Aliases: logisticsim
+Keywords: models
+Description: Simple Logistic Regression Data Simulator
+URL: ../../../library/DAAG/html/logisticsim.html
+
+Entry: lung
+Aliases: lung
+Keywords: datasets
+Description: Cape Fur Seal Lung Measurements
+URL: ../../../library/DAAG/html/lung.html
+
+Entry: measles
+Aliases: measles
+Keywords: datasets
+Description: Deaths in London from measles
+URL: ../../../library/DAAG/html/measles.html
+
+Entry: medExpenses
+Aliases: medExpenses
+Keywords: datasets
+Description: Family Medical Expenses
+URL: ../../../library/DAAG/html/medExpenses.html
+
+Entry: mifem
+Aliases: mifem
+Keywords: datasets
+Description: Mortality Outcomes for Females Suffering Myocardial Infarction
+URL: ../../../library/DAAG/html/mifem.html
+
+Entry: mignonette
+Aliases: mignonette
+Keywords: datasets
+Description: Darwin's Wild Mignonette Data
+URL: ../../../library/DAAG/html/mignonette.html
+
+Entry: milk
+Aliases: milk
+Keywords: datasets
+Description: Milk Sweetness Study
+URL: ../../../library/DAAG/html/milk.html
+
+Entry: modelcars
+Aliases: modelcars
+Keywords: datasets
+Description: Model Car Data
+URL: ../../../library/DAAG/html/modelcars.html
+
+Entry: monica
+Aliases: monica
+Keywords: datasets
+Description: WHO Monica Data
+URL: ../../../library/DAAG/html/monica.html
+
+Entry: moths
+Aliases: moths
+Keywords: datasets
+Description: Moths Data
+URL: ../../../library/DAAG/html/moths.html
+
+Entry: multilap
+Aliases: multilap
+Keywords: models
+Description: Data Filtering Function
+URL: ../../../library/DAAG/html/multilap.html
+
+Entry: nsw74demo
+Aliases: nsw74demo
+Keywords: datasets
+Description: Labour Training Evaluation Data
+URL: ../../../library/DAAG/html/nsw74demo.html
+
+Entry: nsw74psid1
+Aliases: nsw74psid1
+Keywords: datasets
+Description: Labour Training Evaluation Data
+URL: ../../../library/DAAG/html/nsw74psid1.html
+
+Entry: nsw74psid3
+Aliases: nsw74psid3
+Keywords: datasets
+Description: Labour Training Evaluation Data
+URL: ../../../library/DAAG/html/nsw74psid3.html
+
+Entry: nsw74psidA
+Aliases: nsw74psidA
+Keywords: datasets
+Description: A Subset of the nsw74psid1 Data Set
+URL: ../../../library/DAAG/html/nsw74psidA.html
+
+Entry: obounce
+Aliases: obounce
+Keywords: misc
+Description: Bounce - obsolete
+URL: ../../../library/DAAG/html/obounce.html
+
+Entry: oddbooks
+Aliases: oddbooks
+Keywords: datasets
+Description: Measurements on 12 books
+URL: ../../../library/DAAG/html/oddbooks.html
+
+Entry: onesamp
+Aliases: onesamp
+Keywords: models
+Description: Paired Sample t-test
+URL: ../../../library/DAAG/html/onesamp.html
+
+Entry: onet.permutation
+Aliases: onet.permutation
+Keywords: models
+Description: One Sample Permutation t-test
+URL: ../../../library/DAAG/html/onet.permutation.html
+
+Entry: onetPermutation
+Aliases: onetPermutation
+Keywords: models
+Description: One Sample Permutation t-test
+URL: ../../../library/DAAG/html/onetPermutation.html
+
+Entry: oneway.plot
+Aliases: oneway.plot
+Keywords: models
+Description: Display of One Way Analysis Results
+URL: ../../../library/DAAG/html/oneway.plot.html
+
+Entry: onewayPlot
+Aliases: onewayPlot
+Keywords: models
+Description: Display of One Way Analysis Results
+URL: ../../../library/DAAG/html/onewayPlot.html
+
+Entry: orings
+Aliases: orings
+Keywords: datasets
+Description: Challenger O-rings Data
+URL: ../../../library/DAAG/html/orings.html
+
+Entry: overlap.density
+Aliases: overlap.density
+Keywords: models
+Description: Overlapping Density Plots - obsolete
+URL: ../../../library/DAAG/html/overlap.density.html
+
+Entry: overlapDensity
+Aliases: overlapDensity
+Keywords: models
+Description: Overlapping Density Plots
+URL: ../../../library/DAAG/html/overlapDensity.html
+
+Entry: ozone
+Aliases: ozone
+Keywords: datasets
+Description: Ozone Data
+URL: ../../../library/DAAG/html/ozone.html
+
+Entry: pair65
+Aliases: pair65
+Keywords: datasets
+Description: Heated Elastic Bands
+URL: ../../../library/DAAG/html/pair65.html
+
+Entry: panel.corr
+Aliases: panel.corr
+Keywords: models
+Description: Scatterplot Panel
+URL: ../../../library/DAAG/html/panel.corr.html
+
+Entry: panelCorr
+Aliases: panelCorr
+Keywords: models
+Description: Scatterplot Panel
+URL: ../../../library/DAAG/html/panelCorr.html
+
+Entry: panelplot
+Aliases: panelplot
+Keywords: models
+Description: Panel Plot
+URL: ../../../library/DAAG/html/panelplot.html
+
+Entry: pause
+Aliases: pause
+Keywords: misc
+Description: Pause before continuing execution
+URL: ../../../library/DAAG/html/pause.html
+
+Entry: poissonsim
+Aliases: poissonsim
+Keywords: models
+Description: Simple Poisson Regression Data Simulator
+URL: ../../../library/DAAG/html/poissonsim.html
+
+Entry: possum
+Aliases: possum
+Keywords: datasets
+Description: Possum Measurements
+URL: ../../../library/DAAG/html/possum.html
+
+Entry: possumsites
+Aliases: possumsites
+Keywords: datasets
+Description: Possum Sites
+URL: ../../../library/DAAG/html/possumsites.html
+
+Entry: powerplot
+Aliases: powerplot
+Keywords: models
+Description: Plot of Power Functions
+URL: ../../../library/DAAG/html/powerplot.html
+
+Entry: poxetc
+Aliases: poxetc
+Keywords: datasets
+Description: Deaths from various causes, in London from 1629 till 1881, with gaps
+URL: ../../../library/DAAG/html/poxetc.html
+
+Entry: press
+Aliases: press
+Keywords: models
+Description: Predictive Error Sum of Squares
+URL: ../../../library/DAAG/html/press.html
+
+Entry: primates
+Aliases: primates
+Keywords: datasets
+Description: Primate Body and Brain Weights
+URL: ../../../library/DAAG/html/primates.html
+
+Entry: qreference
+Aliases: qreference
+Keywords: models
+Description: Normal QQ Reference Plot
+URL: ../../../library/DAAG/html/qreference.html
+
+Entry: races2000
+Aliases: races2000
+Keywords: datasets
+Description: Scottish Hill Races Data - 2000
+URL: ../../../library/DAAG/html/races2000.html
+
+Entry: rainforest
+Aliases: rainforest
+Keywords: datasets
+Description: Rainforest Data
+URL: ../../../library/DAAG/html/rainforest.html
+
+Entry: rareplants
+Aliases: rareplants
+Keywords: datasets datasets
+Description: Rare and Endangered Plant Species
+URL: ../../../library/DAAG/html/rareplants.html
+
+Entry: rice
+Aliases: rice
+Keywords: datasets
+Description: Genetically Modified and Wild Type Rice Data
+URL: ../../../library/DAAG/html/rice.html
+
+Entry: roller
+Aliases: roller
+Keywords: datasets
+Description: Lawn Roller Data
+URL: ../../../library/DAAG/html/roller.html
+
+Entry: science
+Aliases: science
+Keywords: datasets
+Description: School Science Survey Data
+URL: ../../../library/DAAG/html/science.html
+
+Entry: seedrates
+Aliases: seedrates
+Keywords: datasets
+Description: Barley Seeding Rate Data
+URL: ../../../library/DAAG/html/seedrates.html
+
+Entry: show.colors
+Aliases: show.colors
+Keywords: models
+Description: Show R's Colors
+URL: ../../../library/DAAG/html/show.colors.html
+
+Entry: simulateLinear
+Aliases: simulateLinear
+Keywords: models
+Description: Simulation of Linear Models for ANOVA vs. Regression Comparison
+URL: ../../../library/DAAG/html/simulateLinear.html
+
+Entry: socsupport
+Aliases: socsupport
+Keywords: datasets
+Description: Social Support Data
+URL: ../../../library/DAAG/html/socsupport.html
+
+Entry: softbacks
+Aliases: softbacks
+Keywords: datasets
+Description: Measurements on a Selection of Paperback Books
+URL: ../../../library/DAAG/html/softbacks.html
+
+Entry: sorption
+Aliases: sorption
+Keywords: datasets
+Description: sorption data set
+URL: ../../../library/DAAG/html/sorption.html
+
+Entry: spam7
+Aliases: spam7
+Keywords: datasets
+Description: Spam E-mail Data
+URL: ../../../library/DAAG/html/spam7.html
+
+Entry: stVincent
+Aliases: stVincent
+Keywords: datasets
+Description: Averages by block of yields for the St. Vincent Corn data
+URL: ../../../library/DAAG/html/stVincent.html
+
+Entry: sugar
+Aliases: sugar
+Keywords: datasets
+Description: Sugar Data
+URL: ../../../library/DAAG/html/sugar.html
+
+Entry: tinting
+Aliases: tinting
+Keywords: datasets
+Description: Car Window Tinting Experiment Data
+URL: ../../../library/DAAG/html/tinting.html
+
+Entry: toycars
+Aliases: toycars
+Keywords: datasets
+Description: Toy Cars Data
+URL: ../../../library/DAAG/html/toycars.html
+
+Entry: two65
+Aliases: two65
+Keywords: datasets
+Description: Unpaired Heated Elastic Bands
+URL: ../../../library/DAAG/html/two65.html
+
+Entry: twot.permutation
+Aliases: twot.permutation
+Keywords: models
+Description: Two Sample Permutation Test - Obsolete
+URL: ../../../library/DAAG/html/twot.permutation.html
+
+Entry: twotPermutation
+Aliases: twotPermutation
+Keywords: models
+Description: Two Sample Permutation Test
+URL: ../../../library/DAAG/html/twotPermutation.html
+
+Entry: vif
+Aliases: vif
+Keywords: models
+Description: Variance Inflation Factors
+URL: ../../../library/DAAG/html/vif.html
+
+Entry: vince111b
+Aliases: vince111b
+Keywords: datasets
+Description: Averages by block of corn yields, for treatment 111 only
+URL: ../../../library/DAAG/html/vince111b.html
+
+Entry: vlt
+Aliases: vlt
+Keywords: datasets
+Description: Video Lottery Terminal Data
+URL: ../../../library/DAAG/html/vlt.html
+
+Entry: wages1833
+Aliases: wages1833
+Keywords: datasets
+Description: Wages of Lancashire Cotton Factory Workers in 1833
+URL: ../../../library/DAAG/html/wages1833.html
+
+Entry: whoops
+Aliases: whoops
+Keywords: datasets
+Description: Deaths from whooping cough, in London
+URL: ../../../library/DAAG/html/whoops.html

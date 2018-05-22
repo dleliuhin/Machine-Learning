@@ -1,0 +1,89 @@
+<html><head><title>R: Elastic Band Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for elasticband {DAAG}"><tr><td>elasticband {DAAG}</td><td align="right">R Documentation</td></tr></table>
+<h2>Elastic Band Data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+The <code>elasticband</code> data frame has 7 rows and 2 columns
+giving, for each amount by which an elastic band is stretched
+over the end of a ruler, the distance that the band traveled when
+released.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>elasticband</pre>
+
+
+<h3>Format</h3>
+
+<p>
+This data frame contains the following columns:
+<dl>
+<dt>stretch</dt><dd>the amount by which the
+elastic band was stretched</dd>
+<dt>distance</dt><dd>the distance traveled</dd>
+</dl>
+
+<h3>Source</h3>
+
+<p>
+J. H. Maindonald
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Example 1.8.1")
+
+attach(elasticband)     # R now knows where to find stretch and distance
+plot(stretch, distance) # Alternative: plot(distance ~ stretch)
+detach(elasticband)
+pause()
+
+print("Output of Data Frames - Example 12.3.2")
+
+write(t(elasticband),file="bands.txt",ncol=2)
+
+sink("bands2.txt")
+elasticband   # NB: No output on screen
+sink()
+
+print("Lists - Example 12.7")
+
+elastic.lm &lt;- lm(distance ~ stretch, data=elasticband)
+ names(elastic.lm)
+ elastic.lm$coefficients
+elastic.lm[["coefficients"]]
+pause()
+
+elastic.lm[[1]]
+pause()
+
+elastic.lm[1]
+pause()
+
+options(digits=3)
+elastic.lm$residuals 
+pause()
+
+elastic.lm$call
+pause()
+
+ mode(elastic.lm$call)
+
+</pre>
+
+
+
+<hr><div align="center">[Package <em>DAAG</em> version 0.81 <a href="00Index.html">Index]</a></div>
+
+</body></html>

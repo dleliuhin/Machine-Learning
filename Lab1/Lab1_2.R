@@ -1,4 +1,5 @@
 library(e1071)
+# создаем выборки с заданными параметрами
 x1_1 <- rnorm(50, mean = 10, sd = 4)
 x1_2 <- rnorm(50, mean = 20, sd = 3)
 x2_1 <- rnorm(50, mean = 14, sd = 4)
@@ -10,13 +11,15 @@ points(x1_2,x2_2, pch=22)
 # соединяем выборки
 x1 <- c(x1_1, x1_2)
 x2 <- c(x2_1, x2_2)
-
+# Создаем вектор из 1 и -1
 class<-c(rep('-1',50),rep('1',50))
-
+# создаем таблицу данных t
 t<-data.frame(x1, x2, class, stringsAsFactors = TRUE)
 for (i in seq(20,80,by=10)) 
 {
+  ## Случайным образом выбираем индексы 20-ти значений
   idx<-sample(1:dim(t)[1],20)
+  
   train<-t[-idx, ]
   test<-t[idx, ]
   model<-naiveBayes(train[,-3],train$class)

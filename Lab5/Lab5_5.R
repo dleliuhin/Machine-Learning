@@ -1,0 +1,15 @@
+library(datasets)
+data("EuStockMarkets")
+plot(EuStockMarkets)
+for(i in 1:4){
+  res <- lm(EuStockMarkets[,i]~., data = EuStockMarkets[,-i])
+  print(res)
+  print(summary(res))
+  png(file = paste(toString(i),'lm.png'))
+  plot(res)
+  dev.off()
+}
+plot(EuStockMarkets[, 1], col = "red", ylab = "DAX SMI CAC FTSE")
+lines(EuStockMarkets[, 2], col = "blue")
+lines(EuStockMarkets[, 3], col = "green")
+lines(EuStockMarkets[, 4], col = "yellow")

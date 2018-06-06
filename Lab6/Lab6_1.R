@@ -1,0 +1,15 @@
+library(e1071)
+A_tran=read.table("svmdata1.txt",header = TRUE, sep="\t")
+A_test=read.table("svmdata1test.txt",header = TRUE, sep="\t")
+symbols.pallete = c("Blue", "Red")
+area.pallete = function(n = 2) 
+{ 
+  cols = rainbow(n)
+  cols[1:2] = c("PaleGreen", "Pink") 
+  return(cols)
+}
+plot(X1 ~ X2, A_tran, col = Color) 
+svmModelLinear = svm(Color ~ ., data = A_tran, type = "C-classification", cost = 1, kernel = "linear") 
+plot(svmModelLinear, A_tran, grid = 250, symbolPalette = symbols.pallete, color.palette = area.pallete) 
+predictionsTrain = predict(svmModelLinear, A_tran) 
+table(A_tran$"Color", predictionsTrain)
